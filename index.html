@@ -1,0 +1,614 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-pVhn0r6JoRkCy1TxvBNTYuhX7ZdT8qzA2Da0XwqTlI3xuP+5Vz1yGZ2V8pXU4yyX4M7+mWQ6Pz+XXrGs9l8Hvg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="shortcut icon" href="./assets/images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./assets/css/styles.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
+    <title>LuckyMagyar</title>
+</head>
+
+<body>
+    <!-- <header>
+        <header class="py-3">
+            <div class="container-fluid">
+                <div class="row align-items-center">
+                   
+                    <div class="col-6 col-md-3 d-flex align-items-center">
+                        <img src="./assets/images/logo.png" alt="Rifa Logo" height="40" class="logo" />
+
+                    </div>
+
+                   
+                    <div class="col-md-9 d-none d-md-flex justify-content-end desktop-menu">
+                        <ul class="nav">
+                            <li class="nav-item"><a class="nav-link" href="#">Kezdőlap</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#">Rólunk</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#">Felelős Játék</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#">GYIK</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#">Kapcsolat</a></li>
+                        </ul>
+                    </div>
+
+                    
+                    <div class="col-6 col-md-2 text-end d-md-none">
+                        <button id="menuToggle">&#9776;</button>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        
+        <div id="sidebar">
+            <button class="close-btn" id="closeSidebar">&times;</button>
+            <ul>
+                <li><a href="#">Kezdőlap</a></li>
+                <li><a href="#">Rólunk</a></li>
+                <li><a href="#">Felelős Játék</a></li>
+                <li><a href="#">GYIK</a></li>
+                <li><a href="#">Kapcsolat</a></li>
+            </ul>
+        </div>
+    </header> -->
+
+
+
+
+    <header class="sticky-header">
+        <div class="container">
+            <nav class="navigation-bar">
+                <div class="brand-container">
+                    <a href="./" class="brand-link">
+                    </a>
+                </div>
+
+                <div class="menu-toggle-btn"></div>
+
+                <div class="navigation-menu">
+                    <ul>
+
+                        <li><a class="active" href="#">Kezdőlap</a></li>
+                        <li><a href="#">Rólunk</a></li>
+                        <li><a href="#">Felelős Játék</a></li>
+                        <li><a href="#">GYIK</a></li>
+                        <li><a href="#">Kapcsolat</a></li>
+                    </ul>
+                    <div class="menu-close-btn"></div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+
+
+
+
+
+    <main>
+        <section class="fullscreen-banner">
+            <div class="container">
+                <div class="banner-content">
+                    <h1 class="typing-text">Lucky Magyar – Magyarország KENO útmutatója</h1>
+                    <p>
+                        A KENO az egyik legizgalmasabb és leggyorsabb lottó jellegű játék, és a Lucky Magyar azért jött
+                        létre, hogy a magyar játékosok biztonságosan, felelősségteljesen és magabiztosan élvezhessék.
+                        Platformunk független információkat, hasznos stratégiákat és engedéllyel rendelkező KENO
+                        szolgáltatókat mutat be, hogy Ön arra koncentrálhasson, ami igazán fontos — a szórakozásra és az
+                        okos játékra.
+                    </p>
+                    <p><strong> 🎯 Az Ön KENO-központja Magyarországon.</strong></p>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="container py-5">
+
+                <!-- Title -->
+                <h2 class="section-heading">Legutóbbi eredmények</h2>
+                <p class="text-center mb-4 text-white">Kövesse nyomon a legfrissebb KENO sorsolásokat. Az eredmények
+                    rendszeresen frissülnek, így könnyen
+                    összehasonlíthatja a nyerőszámokat saját tippjeivel.</p>
+                <p class="text-center mb-4 section-table-para">
+                    Legújabb KENO eredmények (Mintaadat – fejlesztői frissítéssel cserélhető):
+                </p>
+
+                <!-- Responsive Table -->
+                <!-- Responsive Table Wrapper -->
+                <div class="keno-table">
+                    <div class="table-responsive-sm">
+                        <table class="table table-borderless mb-0">
+                            <thead>
+                                <tr>
+                                    <th>Dátum</th>
+                                    <th>Sorsolás #</th>
+                                    <th>Nyerőszámok</th>
+                                    <th>Jackpot nyertes</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>2025. szept. 8.</td>
+                                    <td>1425</td>
+                                    <td>
+                                        <span class="keno-number">03</span>
+                                        <span class="keno-number">07</span>
+                                        <span class="keno-number">12</span>
+                                        <span class="keno-number">19</span>
+                                        <span class="keno-number">24</span>
+                                        <span class="keno-number">31</span>
+                                        <span class="keno-number">37</span>
+                                        <span class="keno-number">41</span>
+                                        <span class="keno-number">49</span>
+                                        <span class="keno-number">56</span>
+                                    </td>
+                                    <td><span class="loser">Nem</span></td>
+                                </tr>
+                                <tr>
+                                    <td>2025. szept. 7.</td>
+                                    <td>1424</td>
+                                    <td>
+                                        <span class="keno-number">05</span>
+                                        <span class="keno-number">09</span>
+                                        <span class="keno-number">16</span>
+                                        <span class="keno-number">22</span>
+                                        <span class="keno-number">28</span>
+                                        <span class="keno-number">35</span>
+                                        <span class="keno-number">40</span>
+                                        <span class="keno-number">46</span>
+                                        <span class="keno-number">50</span>
+                                        <span class="keno-number">63</span>
+                                    </td>
+                                    <td><span class="winner">Igen</span></td>
+                                </tr>
+                                <tr>
+                                    <td>2025. szept. 6.</td>
+                                    <td>1423</td>
+                                    <td>
+                                        <span class="keno-number">02</span>
+                                        <span class="keno-number">08</span>
+                                        <span class="keno-number">15</span>
+                                        <span class="keno-number">18</span>
+                                        <span class="keno-number">25</span>
+                                        <span class="keno-number">34</span>
+                                        <span class="keno-number">39</span>
+                                        <span class="keno-number">42</span>
+                                        <span class="keno-number">55</span>
+                                        <span class="keno-number">67</span>
+                                    </td>
+                                    <td><span class="loser">Nem</span></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+
+                <!-- Footer -->
+                <p class="footer-note">
+                    (A fejlesztő automatizált API-val frissítheti, vagy statikusan manuálisan is karbantartható.)
+                </p>
+            </div>
+        </section>
+        <section>
+            <div class="container py-5">
+                <h2 class="section-heading">Mit kínálunk?</h2>
+
+                <!-- Bootstrap Accordion -->
+                <div class="accordion" id="offerAccordion">
+
+                    <!-- Item 1 -->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingOne">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseOne">
+                                1. Megbízható platform összehasonlítások
+                            </button>
+                        </h2>
+                        <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#offerAccordion">
+                            <div class="accordion-body">
+                                Csak olyan KENO szolgáltatókat mutatunk be, amelyek teljes mértékben engedéllyel
+                                rendelkeznek és szabályozottak.
+                                Ez biztosítja, hogy a játékosok mindig biztonságban érezzék magukat játék közben.
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Item 2 -->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingTwo">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseTwo">
+                                2. Tanulási segédanyagok
+                            </button>
+                        </h2>
+                        <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#offerAccordion">
+                            <div class="accordion-body">
+                                Legyen kezdő vagy tapasztalt játékos, a Lucky Magyar útmutatókat, lépésről-lépésre
+                                magyarázatokat
+                                és tippeket kínál a magyar játékosok számára.
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Item 3 -->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingThree">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseThree">
+                                3. Exkluzív promóciók
+                            </button>
+                        </h2>
+                        <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#offerAccordion">
+                            <div class="accordion-body">
+                                Partnereinken keresztül egyedi bónuszokhoz és szezonális ajánlatokhoz férhet hozzá,
+                                amelyek még szórakoztatóbbá teszik a játékélményt.
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Item 4 -->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingFour">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseFour">
+                                4. Fókusz a felelős játékra
+                            </button>
+                        </h2>
+                        <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#offerAccordion">
+                            <div class="accordion-body">
+                                Nagy hangsúlyt fektetünk a tudatos játékra. Hasznos tanácsokat és hivatalos magyar
+                                segélyszolgálatok elérhetőségeit tesszük közzé,
+                                hogy mindenki biztonságban maradhasson.
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <section>
+
+            <!-- Why Lucky Magyar Section -->
+            <div class="container why-lucky-section">
+                <h2 class="why-lucky-heading">Miért válassza a Lucky Magyart?</h2>
+
+                <div class="row g-4">
+
+                    <!-- Card 1 -->
+                    <div class="col-md-6 col-lg-3">
+                        <div class="why-lucky-card">
+                            <img src="./assets/images/impartiality.png" alt="Független és pártatlan"
+                                class="why-lucky-image">
+                            <div class="why-lucky-title">Független és pártatlan</div>
+                            <div class="why-lucky-text">
+                                Nem üzemeltetünk szerencsejátékokat; célunk a tiszta, átlátható információk nyújtása.
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 2 -->
+                    <div class="col-md-6 col-lg-3">
+                        <div class="why-lucky-card">
+                            <img src="./assets/images/hungary.png" alt="Magyar játékosokra szabva"
+                                class="why-lucky-image">
+                            <div class="why-lucky-title">Magyar játékosokra szabva</div>
+                            <div class="why-lucky-text">
+                                Minden tartalmunk Magyarországon elérhető lehetőségekre fókuszál.
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 3 -->
+                    <div class="col-md-6 col-lg-3">
+                        <div class="why-lucky-card">
+                            <img src="./assets/images/shield.png" alt="Biztonság az első" class="why-lucky-image">
+                            <div class="why-lucky-title">Biztonság az első</div>
+                            <div class="why-lucky-text">
+                                Csak engedéllyel rendelkező, szabályozott szolgáltatókat mutatunk be.
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 4 -->
+                    <div class="col-md-6 col-lg-3">
+                        <div class="why-lucky-card">
+                            <img src="./assets/images/free.png" alt="Teljesen ingyenes" class="why-lucky-image">
+                            <div class="why-lucky-title">Teljesen ingyenes</div>
+                            <div class="why-lucky-text">
+                                Nincsenek díjak vagy rejtett költségek — minden tartalom ingyenesen elérhető.
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <section class="keno-how-section">
+            <div class="container">
+                <h2 class="keno-how-heading">Hogyan működik a KENO?</h2>
+                <p class="keno-how-text">
+                    A KENO könnyen megtanulható, mégis izgalmas játék. Válasszon számokat, tegye meg a tétet, majd várja
+                    a sorsolást!
+                </p>
+
+                <div class="row align-items-center g-5">
+                    <!-- Image -->
+                    <div class="col-lg-6 text-center">
+                        <img src="./assets/images/how.jpg" alt="Keno játék" class="keno-how-image">
+                    </div>
+
+                    <!-- Features -->
+                    <div class="col-lg-6">
+                        <div class="row g-4">
+                            <!-- Feature 1 -->
+                            <div class="col-12 col-md-6">
+                                <div class="keno-feature-card">
+                                    <div class="keno-feature-icon">🎯</div>
+                                    <h3 class="keno-feature-title">Egyszerű játékmenet</h3>
+                                    <p class="keno-feature-text">
+                                        Csak válasszon számokat, tegye meg a tétet és várja az eredményt.
+                                    </p>
+                                </div>
+                            </div>
+                            <!-- Feature 2 -->
+                            <div class="col-12 col-md-6">
+                                <div class="keno-feature-card">
+                                    <div class="keno-feature-icon">💰</div>
+                                    <h3 class="keno-feature-title">Rugalmas tétek</h3>
+                                    <p class="keno-feature-text">
+                                        Kis tétekkel vagy nagyobb összegekkel is játszhat.
+                                    </p>
+                                </div>
+                            </div>
+                            <!-- Feature 3 -->
+                            <div class="col-12">
+                                <div class="keno-feature-card">
+                                    <div class="keno-feature-icon">⏱️</div>
+                                    <h3 class="keno-feature-title">Gyakori sorsolások</h3>
+                                    <p class="keno-feature-text">
+                                        A játék naponta több alkalommal is elérhető, így mindig van izgalom.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="keno-tips-section py-5">
+            <div class="container">
+                <!-- Heading -->
+                <h2 class="keno-tips-heading mb-4">Tippek az okosabb játékhoz</h2>
+                <p class="keno-tips-subtext mb-5">
+                    Egyszerű, de hatékony tanácsok, amelyek segítenek felelősségteljesen élvezni a KENO játékot.
+                </p>
+
+                <div class="row g-4">
+                    <!-- Tip 1 -->
+                    <div class="col-md-6 col-lg-3">
+                        <div class="tip-card h-100">
+                            <div class="tip-icon">📊</div>
+                            <h3 class="tip-title">Ismerje meg az esélyeket</h3>
+                            <p class="tip-text">
+                                A kifizetések megértése segít reális elvárásokat kialakítani.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Tip 2 -->
+                    <div class="col-md-6 col-lg-3">
+                        <div class="tip-card h-100">
+                            <div class="tip-icon">💳</div>
+                            <h3 class="tip-title">Határozzon meg költségkeretet</h3>
+                            <p class="tip-text">
+                                Mindig döntse el előre, mennyit szán játékra.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Tip 3 -->
+                    <div class="col-md-6 col-lg-3">
+                        <div class="tip-card h-100">
+                            <div class="tip-icon">🎉</div>
+                            <h3 class="tip-title">Szórakozásból játsszon</h3>
+                            <p class="tip-text">
+                                Tekintse hobbinak, ne bevételi forrásnak.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Tip 4 -->
+                    <div class="col-md-6 col-lg-3">
+                        <div class="tip-card h-100">
+                            <div class="tip-icon">📚</div>
+                            <h3 class="tip-title">Maradjon tájékozott</h3>
+                            <p class="tip-text">
+                                Kövesse útmutatóinkat, hogy a legtöbbet hozza ki a játékból.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="review-section">
+            <!-- Játékos vélemények Section -->
+            <div class="container reviews-section">
+                <h2 class="reviews-heading">Játékos vélemények</h2>
+
+                <div id="reviewsCarousel" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+
+                        <!-- Review 1 -->
+                        <div class="carousel-item active">
+                            <div class="review-card">
+                                <p>
+                                    „Soha nem játszottam korábban KENO-t, de a Lucky Magyar útmutatói segítettek
+                                    elindulni.
+                                    Most már magabiztosan játszom online.”
+                                </p>
+                                <div class="review-author">– Ádám, Budapest</div>
+                            </div>
+                        </div>
+
+                        <!-- Review 2 -->
+                        <div class="carousel-item">
+                            <div class="review-card">
+                                <p>
+                                    „Tetszik, hogy ez az oldal csak engedéllyel rendelkező szolgáltatókat mutat.
+                                    Így sokkal biztonságosabbnak érzem az online játékot.”
+                                </p>
+                                <div class="review-author">– Katalin, Debrecen</div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!-- Controls -->
+                    <button class="carousel-control-prev" type="button" data-bs-target="#reviewsCarousel"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon"></span>
+                        <span class="visually-hidden">Előző</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#reviewsCarousel"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon"></span>
+                        <span class="visually-hidden">Következő</span>
+                    </button>
+
+                    <!-- Indicators -->
+                    <div class="carousel-indicators mt-4">
+                        <button type="button" data-bs-target="#reviewsCarousel" data-bs-slide-to="0"
+                            class="active"></button>
+                        <button type="button" data-bs-target="#reviewsCarousel" data-bs-slide-to="1"></button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="join-community-modern py-5">
+            <!-- Background animation shape -->
+            <div class="bg-shape"></div>
+
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        <div class="card text-center p-5 rounded-4 shadow-lg">
+                            <h2 class="community-heading mb-3">Csatlakozzon a közösséghez</h2>
+                            <p class="community-text mb-2">
+                                A Lucky Magyar nemcsak a játékokról szól — hanem egy biztonságos, tájékozott magyar
+                                játékos
+                                közösség építéséről.
+                            </p>
+                            <p class="community-text mb-4">
+                                Maradjon naprakész az útmutatókkal, promóciókkal és hírekkel kapcsolatban.<br>
+                                📩 Iratkozzon fel hírlevelünkre, és értesüljön elsőként az újdonságokról.
+                            </p>
+
+                            <!-- Newsletter Form -->
+                            <form class="d-flex justify-content-center flex-wrap gap-2">
+                                <input type="email" class="form-control w-75 w-sm-50"
+                                    placeholder="Adja meg az email címét">
+                                <button type="submit" class="btn btn-warning">Feliratkozás</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <footer class="footer scroll-anim">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-12 aos-init aos-animate" data-aos="fade-down" data-aos-duration="1000">
+                        <div class="footer_logo_box text-center pb-3">
+                            <a href="./" class="footer_logo"></a>
+                        </div>
+                    </div>
+                    <div class="col-md-12 pb-4">
+                        <div class="footer-links">
+                            <a href="about">Kezdőlap</a> |
+                            <a href="contact">Rólunk</a> |
+                            <a href="#">Felelős Játék</a> |
+                            <a href="#">GYIK</a> |
+                            <a href="#">Kapcsolat</a> |
+
+                        </div>
+                    </div>
+                    <div class="col-md-12">
+                        <div class="disclaimer_txt text-center pt-4 pb-5">
+                            <h3>
+                                Jogi nyilatkozat
+                            </h3>
+                            <p>
+                                A Lucky Magyar egy független információs weboldal. Nem üzemeltetünk szerencsejátékot és
+                                nem árulunk lottószelvényeket. Az oldalon található tartalom kizárólag tájékoztató
+                                jellegű. Bár törekszünk az adatok pontosságára és frissítésére, nem vállalunk garanciát
+                                a teljességre vagy a megbízhatóságra. A külső linkek harmadik fél oldalaira mutatnak,
+                                amelyek saját feltételekkel és szabályzatokkal rendelkeznek. Kérjük, mindig
+                                felelősségteljesen játsszon, és csak 18 éven felüliek vegyenek részt a játékban.
+                            </p>
+                        </div>
+                    </div>
+
+
+                    <div class="col-md-12 py-4 text-center aos-init" data-aos="fade-left" data-aos-duration="1000">
+                        <h3 class="text-center follow_heading mb-3">
+                            Follow Us
+                        </h3>
+                        <div class="social-links">
+                            <a href="https://www.facebook.com/" target="_blank"><i
+                                    class="fa-brands fa-facebook-f"></i></a>
+                            <a href="https://www.instagram.com/?hl=en" target="_blank"><i
+                                    class="fa-brands fa-instagram"></i></a>
+                            <a href="https://x.com/?lang=en" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+                            <a href="https://www.youtube.com/" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-md-12 aos-init" data-aos="fade-right" data-aos-duration="1000">
+                        <div class="footer-links">
+                            <a href="personal-data-policy">Adatvédelmi Szabályzat</a> |
+                            <a href="privacy-policy">Cookie Szabályzat</a> |
+                            <a href="terms-conditions">Általános Szerződési Feltételek</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+
+
+    </main>
+
+</body>
+
+
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+<script src="./assets/js/jquery.js"></script>
+<script src="./assets/js/index.js"></script>
+
+</html>
