@@ -1533,14 +1533,150 @@ header .container {
 
 
 
-.why-lucky-section p{
+.why-lucky-section p {
     color: white;
     text-align: center;
-    
+
 }
-.nem{
+
+.nem {
     padding-top: 70px;
 }
-.Ahogy{
+
+.Ahogy {
     padding-bottom: 50px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Szerepünk Section */
+.role-section {
+    color: #fff;
+    background: linear-gradient(180deg, rgba(3, 27, 70, 0.95) 0%, rgba(3, 27, 70, 1) 100%);
+    padding: 100px 0 80px;
+}
+
+/* Card / container */
+.role-card {
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.03), rgba(255, 255, 255, 0.02));
+    border-radius: 14px;
+    box-shadow: 0 10px 40px rgba(3, 27, 70, 0.6), 0 2px 8px rgba(0, 0, 0, 0.5);
+    position: relative;
+    overflow: visible;
+    transform: translateY(12px);
+    opacity: 0;
+    transition: transform 600ms cubic-bezier(.16, .84, .24, 1), opacity 600ms ease;
+    border: 1px solid rgba(255, 255, 255, 0.03);
+}
+
+/* Accent stripe to the left of the header */
+.role-head {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    position: relative;
+}
+
+.role-title {
+    font-size: clamp(1.4rem, 2.4vw, 2rem);
+    font-weight: 700;
+    margin: 0;
+    letter-spacing: 0.2px;
+    background: linear-gradient(90deg, #ff6b6b, #f06595, #845ef7);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* decorative accent */
+.role-accent {
+    height: 6px;
+    width: 56px;
+    border-radius: 6px;
+    background: linear-gradient(90deg, #ff6b6b, #f06595, #845ef7);
+    box-shadow: 0 6px 20px rgba(132, 94, 247, 0.18);
+}
+
+/* Paragraph style */
+.role-paragraph {
+    color: #e6eefc;
+    /* soft white */
+    font-size: clamp(1rem, 1.6vw, 1.125rem);
+    line-height: 1.8;
+    margin: 0;
+}
+
+/* small decorative corner glow */
+.role-card::after {
+    content: "";
+    position: absolute;
+    right: -40px;
+    top: -20px;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    filter: blur(30px);
+    background: radial-gradient(circle at 30% 30%, rgba(132, 94, 247, 0.16), transparent 35%);
+    pointer-events: none;
+    z-index: 0;
+}
+
+/* When visible (JS will add .in-view) */
+.role-card.in-view {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+
+/* accessibility focus */
+.role-card:focus-within {
+    outline: 3px solid rgba(132, 94, 247, 0.18);
+    outline-offset: 6px;
 }

@@ -19,6 +19,22 @@ $(document).ready(function () {
 // Toggle Menu Functionaliy End
 
 
+// Simple IntersectionObserver to reveal the card when scrolled into view
+(function(){
+  const card = document.querySelector('.role-card');
+  if (!card) return;
+  const io = new IntersectionObserver(entries => {
+    entries.forEach(e => {
+      if (e.isIntersecting) {
+        card.classList.add('in-view');
+        io.unobserve(card);
+      }
+    });
+  }, { threshold: 0.18 });
+  io.observe(card);
+})();
+
+
 
 
 
