@@ -329,7 +329,7 @@ header .container {
 .banner-content {
     position: relative;
     z-index: 2;
-    max-width: 1140px;
+    max-width: 1180px;
     padding: 0 20px;
 }
 
@@ -345,7 +345,7 @@ header .container {
     white-space: nowrap;
     overflow: hidden;
     border-right: 2px solid #fff;
-    animation: typing 5s steps(60, end) forwards, stopCursor 5s steps(60, end) forwards, gradientMove 5s ease infinite;
+    animation: typing 3s steps(60, end) forwards, stopCursor 3s steps(60, end) forwards, gradientMove 3s ease infinite;
     padding-bottom: 5px;
 }
 
@@ -390,12 +390,12 @@ header .container {
 .banner-content p {
     font-size: 1.3rem;
     margin: 30px 0;
-    opacity: 0;
-    animation: fadeInUp 2s ease 5s forwards;
+    /* opacity: 0; */
+    /* animation: fadeInUp 2s ease 5s forwards; */
     /* appears after typing */
 }
 
-@keyframes fadeInUp {
+/* @keyframes fadeInUp {
     0% {
         opacity: 0;
         transform: translateY(20px);
@@ -405,7 +405,7 @@ header .container {
         opacity: 1;
         transform: translateY(0);
     }
-}
+} */
 
 
 
@@ -639,11 +639,10 @@ header .container {
 
 
 
-
-
 /* Section specific */
 .why-lucky-section {
     padding: 60px 0;
+    overflow-x: hidden; /* Prevents horizontal scroll */
 }
 
 .why-lucky-heading {
@@ -672,8 +671,8 @@ header .container {
 }
 
 .why-lucky-image {
-    width: 80px;
-    height: 80px;
+    width: 70px;
+    height: 70px;
     object-fit: contain;
     margin: 0 auto 1rem;
 }
@@ -689,14 +688,6 @@ header .container {
     font-size: 0.95rem;
     color: #d1d1d1;
 }
-
-
-
-
-
-
-
-
 
 
 
@@ -1289,6 +1280,7 @@ header .container {
     align-items: center;
     justify-content: center;
     transition: 0.4s all ease-in-out;
+    padding: 5px;
 }
 
 .social-links a:hover {
@@ -1317,5 +1309,7 @@ header .container {
     margin-bottom: 15px;
     color: #00ffcc;
 }
-
+.overflow-class{
+    overflow: hidden;
+}
 /* Footer CSS End */

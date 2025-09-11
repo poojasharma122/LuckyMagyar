@@ -6,9 +6,35 @@
         font-weight: 500;
         font-size: 18px;
     }
+
+    .typing-text {
+        font-size: 40px !important;
+    }
+
+    .banner-content {
+
+        max-width: 990px;
+
+        margin: 0 auto;
+    }
 }
 
-@media screen and (max-width: 1024px) {}
+@media screen and (max-width: 1024px) {
+    .fullscreen-banner {
+
+        height: 90vh;
+
+    }
+
+    .typing-text {
+        font-size: 36px !important;
+    }
+
+    .banner-content p {
+        font-size: 18px;
+
+    }
+}
 
 @media screen and (max-width: 991px) {
     .navigation-menu {
@@ -18,7 +44,7 @@
         height: 100%;
         width: 100%;
         padding: 50px;
-        background-color: #432818;
+        background-color: #04173b;
         transform: translateX(100%);
         transition: all 0.3s linear;
         z-index: 100;
@@ -64,31 +90,17 @@
 
 
     .typing-text {
-        font-size: 2.5rem;
+        font-size: 29px !important;
     }
 
-    .banner-content p {
-        font-size: 1.2rem;
-    }
+    .banner-content p {}
 
-    .footer-links {
-        padding-left: 0;
+    .fullscreen-banner {
+        height: 80vh;
     }
-
-    .footer-top {
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-gap: 15px;
-    }
-
-    .footer-logo {
-        grid-column: 1 / -1;
-        padding-bottom: 20px;
-    }
-
-    .footer-links,
-    .footer-contact {
-        grid-column: auto;
-        padding-left: 0;
+    .why-lucky-section {
+        padding: 40px 0;
+       
     }
 }
 
@@ -113,51 +125,41 @@
         /* min-height: 68px; */
     }
 
-    .disclaimer {
-
-        padding: 30px 0px;
+    .fullscreen-banner {
+        height: 70vh;
     }
-
-    .footer-bottom {
-        flex-direction: column;
-        justify-content: center;
-        gap: 1.25rem;
-        padding-top: 1.5625rem;
+    .typing-text {
+       
+        white-space: wrap;
+        
     }
-
-    .footer-top {
-        grid-template-columns: 1fr;
+    .typing-text {
+       
+        white-space: wrap;
+        animation: none;
+        border-right: none !important; 
+        
     }
-
-    .footer-logo,
-    .footer-links,
-    .footer-contact {
-        grid-column: 1 / -1;
-        padding-left: 0;
+    .review-section {
+        padding: 0px 0 50px;
     }
-
-    .social-icons {
-
-        padding-bottom: 20px;
+    .keno-tips-heading {
+        font-size: 28px;
+        
     }
-
-    .footer-top {
-
-        padding-top: 30px !important;
+    .footer_logo {
+       
+        width: 236px;
     }
-
-    .footer-links li a {
-        font-size: 16px;
+    .ssl-certi-inner {
+        height: 3rem;
+        width: 150px;
+        
     }
-
-    .footer-top h4 {
-        font-size: 20px;
-        margin-bottom: 10px;
-    }
-
-    .footer-pages-content-grp h3 {
-        font-size: 22px;
-
+    .review-card {
+       
+        max-width: 565px;
+       
     }
 }
 
@@ -195,27 +197,127 @@
         font-size: 1rem;
     }
 
-    .disclaimer {
-        background-color: #1e1e23;
-        padding: 30px 0px;
+    .footer_logo {
+        width: 15.75rem;
     }
 
-    .footer-links li a {
-        font-size: 15px;
+    .why-lucky-card {
+        padding: 1rem;
     }
 
-    .footer-top h4 {
-        font-size: 18px;
-        margin-bottom: 10px;
+    .why-lucky-title {
+        font-size: 1.1rem;
     }
 
-    .footer-pages-content-grp h3 {
-        font-size: 20px;
+    .why-lucky-text {
+        font-size: 0.9rem;
     }
 
-    .footer-pages-content-grp p {
-        font-size: 15px;
+    .why-lucky-image {
+        width: 60px;
+        height: 60px;
+    }
 
+    .fullscreen-banner {
+        height: 60vh;
+    }
+    .brand-container a, .footer-logo a {
+       
+        height: 45px;
+        
+    }
+    .menu-toggle-btn {
+        
+        width: 23px;
+        
+    }
+    .banner-content {
+       padding: 30px 0 0;
+    }
+    .typing-text {
+       
+        white-space: wrap;
+        animation: none;
+        border-right: none !important; 
+        
+    }
+    .typing-text {
+        font-size: 25px !important;
+    }
+    .keno-how-heading {
+        
+        font-size: 28px;
+    }
+    .review-card {
+        max-width: 470px;
+    }
+    .carousel-control-next, .carousel-control-prev {
+      
+        top: 200px;
+        
+    }
+    .carousel-control-next {
+        right: 35%;
+    }
+    .carousel-control-prev {
+        left: 35%;
+    }
+    .section-heading {
+        font-size: 25px;
+    }
+    .why-lucky-heading {
+        font-size: 25px;
+    }
+    .keno-how-heading {
+        font-size: 25px;
+    }
+    .keno-how-section {
+        padding: 60px 0;
+        
+    }
+    .keno-tips-heading {
+        font-size: 25px;
+    }
+    .reviews-heading {
+        font-size: 25px;
+    }
+    .community-heading {
+        font-size: 25px;
+    }
+    .footer_logo {
+        width: 170px;
+    }
+    .footer_logo_box {
+        padding-bottom: 0 !important;
+    }
+    .footer .footer-links a {
+       
+        font-size: 16px;
+       
+    }
+    .disclaimer_txt h3 {
+        font-size: 22px;
+       
+    }
+    .follow_heading {
+        font-size: 22px;
+    }
+    .ssl-certi-inner {
+        height: 3rem;
+        width: 130px;
+    }
+    .navigation-menu ul li a {
+        
+        font-size: 16px;
+    }
+    .social-links a {
+      
+        width: 35px;
+        height: 35px;
+       
+    }
+    .footer .footer-links {
+        padding-top: 0;
     }
 }
 
@@ -224,51 +326,75 @@
         font-size: 20px;
     }
 
-    .disclaimer h2 {
-
-        font-size: 20px;
-
+    .fullscreen-banner {
+        height: 50vh;
     }
-
-    .disclaimer p {
+    .banner-content {
+        padding: 40px 0 0;
+    }
+    .typing-text {
+        font-size: 21px !important;
+    }
+    .review-card {
+        max-width: 330px;
+    }
+    .carousel-control-next, .carousel-control-prev {
+        top: 220px;
+    }
+    .typing-text {
+        font-size: 18px !important;
+    }
+    .banner-content p {
         font-size: 14px;
-        line-height: 1.8;
+        margin: 10px 0;
     }
-
-    .disclaimer {
-        background-color: #1e1e23;
-        padding: 30px 0px;
-    }
-
-    .footer-links li a {
-
-        font-size: 14px;
-
-    }
-
-    .footer-bottom p {
-
-        font-size: 15px;
-    }
-
-    .footer-top h4 {
+    .section-heading {
         font-size: 18px;
-        margin-bottom: 10px;
-
     }
-
-    .footer-pages-content-grp h3 {
-        font-size: 17px;
+    .why-lucky-heading {
+        font-size: 18px;
     }
-
-    .footer-pages-content-grp p {
+    .keno-how-heading {
+        font-size: 21px;
+    }
+    .keno-tips-heading {
+        font-size: 18px;
+    }
+    .reviews-heading {
+        font-size: 20px;
+    }
+    .card {
+        padding-left: 10px !important;
+        padding-right: 10px !important;
+    }
+    .community-heading {
+        font-size: 19px;
+    }
+    .community-text {
         font-size: 14px;
     }
-
-    .footer-pages-wrap {
-
-        padding: 20px;
-
+    p {
+        font-size: 14px !important;
     }
-
+    .join-community-modern input {
+        width: 100% !important;
+        font-size: 14px;
+        text-align: center;
+    }
+    .join-community-modern button {
+        padding: 10px 28px !IMPORTANT;
+        font-size: 14px;
+    }
+    .carousel-control-next, .carousel-control-prev {
+        top: 190px;
+    }
+    .social-links a {
+       
+        width: 30px;
+        height: 30px;
+      
+    }
+    .footer .footer-links {
+        padding-top: 0;
+    }
 }
