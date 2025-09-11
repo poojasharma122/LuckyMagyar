@@ -1680,3 +1680,123 @@ header .container {
     outline: 3px solid rgba(132, 94, 247, 0.18);
     outline-offset: 6px;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.temp-font-size {
+    font-size: 25px !important;
+}
+
+.lizard-section button {
+    /* font-size: 20px; */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Contact Section */
+.contact-section {
+    background-color: #031B46;
+    color: #fff;
+    padding: 80px 0 0;
+}
+
+.contact-card {
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.02));
+    border: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.contact-heading {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #ffcc00;
+}
+
+.contact-item {
+    font-size: 1.2rem;
+}
+
+.contact-icon {
+    font-size: 1.5rem;
+    margin-right: 8px;
+}
+
+.contact-link {
+    color: #ffcc00;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.contact-link:hover {
+    color: #fff176;
+}
+
+.contact-response {
+    font-size: 1rem;
+    color: #ddd;
+}
