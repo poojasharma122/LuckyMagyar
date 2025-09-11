@@ -98,10 +98,13 @@
     .fullscreen-banner {
         height: 80vh;
     }
+
     .why-lucky-section {
         padding: 40px 0;
-       
+
     }
+
+
 }
 
 @media (max-width: 767px) {
@@ -128,39 +131,131 @@
     .fullscreen-banner {
         height: 70vh;
     }
+
     .typing-text {
-       
+
         white-space: wrap;
-        
+
     }
+
     .typing-text {
-       
+
         white-space: wrap;
         animation: none;
-        border-right: none !important; 
-        
+        border-right: none !important;
+
     }
+
     .review-section {
         padding: 0px 0 50px;
     }
+
     .keno-tips-heading {
         font-size: 28px;
-        
+
     }
+
     .footer_logo {
-       
+
         width: 236px;
     }
+
     .ssl-certi-inner {
         height: 3rem;
         width: 150px;
-        
+
     }
+
     .review-card {
-       
+
         max-width: 565px;
-       
+
     }
+
+    .tip-card {
+        padding: 1.5rem 1rem;
+    }
+
+    .tip-image {}
+
+    .tip-title {
+        font-size: 1.15rem;
+    }
+
+    .tip-text {
+        font-size: 0.9rem;
+    }
+
+    /* Inner page banner styling */
+    .inner-banner {
+        position: relative;
+        width: 100%;
+        height: 50vh;
+        /* shorter than homepage */
+        background: url('../images/about_banner.jpg') center center/cover no-repeat;
+        color: #fff;
+        text-align: center;
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .inner-banner::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.6);
+        /* slightly lighter overlay */
+        z-index: 1;
+    }
+
+    .inner-banner .banner-content {
+        position: relative;
+        z-index: 2;
+        max-width: 960px;
+        padding: 0 15px;
+        /* Bootstrap padding */
+    }
+
+    .inner-banner .banner-title {
+        font-size: 2.5rem;
+        font-weight: 700;
+    }
+
+    .inner-banner .banner-subtitle {
+        font-size: 1.2rem;
+        margin-top: 15px;
+    }
+
+    .innerpage-title {
+        font-size: 2rem;
+    }
+
+    .innerpage-subtitle {
+        font-size: 1rem;
+    }
+
+    .innerpage-title {
+        font-size: 28px;
+    }
+    .keno-section {
+       
+        padding-top: 50px;
+    }
+    .keno-tips-section {
+        
+        padding: 60px 0;
+    }
+    .keno-how-heading {
+        
+        font-size: 28px;
+    }
+
+
 }
 
 @media screen and (max-width: 575px) {
@@ -221,104 +316,142 @@
     .fullscreen-banner {
         height: 60vh;
     }
-    .brand-container a, .footer-logo a {
-       
+
+    .brand-container a,
+    .footer-logo a {
+
         height: 45px;
-        
+
     }
+
     .menu-toggle-btn {
-        
+
         width: 23px;
-        
+
     }
+
     .banner-content {
-       padding: 30px 0 0;
+        padding: 30px 0 0;
     }
+
     .typing-text {
-       
+
         white-space: wrap;
         animation: none;
-        border-right: none !important; 
-        
+        border-right: none !important;
+
     }
+
     .typing-text {
         font-size: 25px !important;
     }
+
     .keno-how-heading {
-        
+
         font-size: 28px;
     }
+
     .review-card {
         max-width: 470px;
     }
-    .carousel-control-next, .carousel-control-prev {
-      
+
+    .carousel-control-next,
+    .carousel-control-prev {
+
         top: 200px;
-        
+
     }
+
     .carousel-control-next {
         right: 35%;
     }
+
     .carousel-control-prev {
         left: 35%;
     }
+
     .section-heading {
         font-size: 25px;
     }
+
     .why-lucky-heading {
         font-size: 25px;
     }
+
     .keno-how-heading {
         font-size: 25px;
     }
+
     .keno-how-section {
         padding: 60px 0;
-        
+
     }
+
     .keno-tips-heading {
         font-size: 25px;
     }
+
     .reviews-heading {
         font-size: 25px;
     }
+
     .community-heading {
         font-size: 25px;
     }
+
     .footer_logo {
         width: 170px;
     }
+
     .footer_logo_box {
         padding-bottom: 0 !important;
     }
+
     .footer .footer-links a {
-       
+
         font-size: 16px;
-       
+
     }
+
     .disclaimer_txt h3 {
         font-size: 22px;
-       
+
     }
+
     .follow_heading {
         font-size: 22px;
     }
+
     .ssl-certi-inner {
         height: 3rem;
         width: 130px;
     }
+
     .navigation-menu ul li a {
-        
+
         font-size: 16px;
     }
+
     .social-links a {
-      
+
         width: 35px;
         height: 35px;
-       
+
     }
+
     .footer .footer-links {
         padding-top: 0;
     }
+
+    .innerpage-banner {
+
+        height: 40vh;
+
+    }
+    .innerpage-title {
+        font-size: 24px;
+    }
+
 }
 
 @media screen and (max-width: 480px) {
@@ -329,72 +462,104 @@
     .fullscreen-banner {
         height: 50vh;
     }
+
     .banner-content {
         padding: 40px 0 0;
     }
+
     .typing-text {
         font-size: 21px !important;
     }
+
     .review-card {
         max-width: 330px;
     }
-    .carousel-control-next, .carousel-control-prev {
+
+    .carousel-control-next,
+    .carousel-control-prev {
         top: 220px;
     }
+
     .typing-text {
         font-size: 18px !important;
     }
+
     .banner-content p {
         font-size: 14px;
         margin: 10px 0;
     }
+
     .section-heading {
         font-size: 18px;
     }
+
     .why-lucky-heading {
         font-size: 18px;
     }
+
     .keno-how-heading {
         font-size: 21px;
     }
+
     .keno-tips-heading {
         font-size: 18px;
     }
+
     .reviews-heading {
         font-size: 20px;
     }
+
     .card {
         padding-left: 10px !important;
         padding-right: 10px !important;
     }
+
     .community-heading {
         font-size: 19px;
     }
+
     .community-text {
         font-size: 14px;
     }
+
     p {
         font-size: 14px !important;
     }
+
     .join-community-modern input {
         width: 100% !important;
         font-size: 14px;
         text-align: center;
     }
+
     .join-community-modern button {
         padding: 10px 28px !IMPORTANT;
         font-size: 14px;
     }
-    .carousel-control-next, .carousel-control-prev {
+
+    .carousel-control-next,
+    .carousel-control-prev {
         top: 190px;
     }
+
     .social-links a {
-       
+
         width: 30px;
         height: 30px;
-      
+
     }
+
     .footer .footer-links {
         padding-top: 0;
+    }
+
+    .innerpage-banner {
+        height: 30vh;
+    }
+    .innerpage-title {
+        font-size: 20px;
+    }
+    .keno-section {
+        padding-top: 30px;
     }
 }
