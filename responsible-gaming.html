@@ -46,7 +46,8 @@
     <main>
         <!-- Inner Page Banner -->
         <!-- About Us Page Banner -->
-        <section class="innerpage-banner d-flex align-items-center text-center" style="background-image: url('./assets/images/responsible-after-banner.jpg');">
+        <section class="innerpage-banner d-flex align-items-center text-center"
+            style="background-image: url('./assets/images/responsible-after-banner.jpg');">
             <div class="container">
                 <div class="innerpage-banner-content">
                     <h1 class="innerpage-title">Elkötelezettségünk a felelős játék iránt</h1>
@@ -56,19 +57,24 @@
         </section>
 
         <!-- Section 1 -->
-        <section class="keno-section ">
+        <section class="keno-section overflow-class">
+            <!-- Geometric shapes -->
+            <div class="keno-shape shape-1"></div>
+            <div class="keno-shape shape-2"></div>
+            <div class="keno-shape shape-3"></div>
+            <div class="keno-shape shape-4"></div>
+
             <div class="container">
-                <div class="row align-items-center flex-lg-row-reverse" >
+                <div class="row align-items-center flex-lg-row-reverse">
                     <!-- Image Column -->
-                    <div class="col-lg-6 mb-4 mb-lg-0"  data-aos="fade-left">
+                    <div class="col-lg-6 mb-4 mb-lg-0" data-aos="fade-left">
                         <div class="keno-image">
-                            <img src="./assets/images/temp.jpg" alt="KENO Mission"
-                                class="img-fluid rounded shadow-lg">
+                            <img src="./assets/images/temp.jpg" alt="KENO Mission" class="img-fluid rounded shadow-lg">
                         </div>
                     </div>
                     <!-- Content Column -->
                     <div class="col-lg-6">
-                        <div class="keno-content" data-aos="fade-right" >
+                        <div class="keno-content" data-aos="fade-right">
                             <p>
                                 A Lucky Magyarnál hisszük, hogy a KENO és más lottó jellegű játékok mindig
                                 szórakoztatóak, biztonságosak és felelősségteljesek kell, hogy legyenek. A
@@ -78,12 +84,6 @@
                         </div>
                     </div>
                 </div>
-            </div>
-        </section>
-
-        <!-- Section 2 -->
-        <section class="keno-section">
-            <div class="container">
                 <div class="row align-items-center">
                     <!-- Image Column -->
                     <div class="col-lg-6 mb-4 mb-lg-0" data-aos="fade-right">
@@ -104,8 +104,21 @@
                     </div>
                 </div>
             </div>
+            <!-- SVG Curve -->
+            <svg class="curve" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 120">
+                <path fill="#031B46" fill-opacity="1" d="M0,0 C600,100 800,0 1440,80 L1440,120 L0,120 Z"></path>
+            </svg>
         </section>
-        <section class="keno-tips-section overflow-class ">
+
+
+        <section class="keno-tips-section overflow-class "
+            style="background: linear-gradient(135deg, #2a0a4d, #0a0033);">
+            <!-- Geometric Shapes -->
+            <div class="bg-shape bg-shape-1"></div>
+            <div class="bg-shape bg-shape-2"></div>
+            <div class="bg-shape bg-shape-3"></div>
+            <div class="bg-shape bg-shape-4"></div>
+
             <div class="container">
                 <!-- Heading -->
                 <h2 class="keno-tips-heading mb-5">A felelős játék alapelvei</h2>
@@ -182,13 +195,7 @@
                     Ha ezeket a jeleket észleli magán vagy valakin a környezetében, érdemes segítséget kérni.
                 </p>
             </div>
-        </section>
-
-
-
-
-        <section class="keno-tips-section overflow-class " style="padding-top: 0;">
-            <div class="container">
+            <div class="container" style="padding-top: 50px;">
                 <!-- Heading -->
                 <h2 class="keno-tips-heading mb-5">A problémás játék figyelmeztető jelei</h2>
 
@@ -262,7 +269,15 @@
             </div>
         </section>
 
-        <section class="keno-how-section overflow-class" data-aos="fade-up" data-aos-duration="3000">
+
+
+
+
+
+        <section class="keno-how-section overflow-class" data-aos="fade-up" data-aos-duration="2000">
+            <!-- Geometric Shapes -->
+            <div class="triangle-shape"></div>
+            <div class="triangle-small"></div>
             <div class="container">
                 <h2 class="keno-how-heading">Támogatás és források Magyarországon</h2>
                 <p class="keno-how-text">
@@ -319,10 +334,19 @@
 
 
         <!-- Szerepünk Section -->
+        <!-- Szerepünk Section -->
+        <!-- Szerepünk Section -->
         <section id="szerepunk" class="role-section overflow-class">
+            <!-- Background shapes container -->
+            <div class="bg-shapes">
+                <div class="shape circle shape-1"></div>
+                <div class="shape circle shape-2"></div>
+                <div class="shape square shape-1"></div>
+                <div class="shape square shape-2"></div>
+            </div>
+
             <div class="container">
-                <div class="row justify-content-center" data-aos="fade-up"
-                data-aos-duration="3000">
+                <div class="row justify-content-center" data-aos="fade-up" data-aos-duration="3000">
                     <div class="col-lg-8">
                         <article class="role-card p-4 p-md-5">
                             <header class="role-head mb-3">
@@ -333,8 +357,9 @@
                             <div class="role-body">
                                 <p class="role-paragraph">
                                     A Lucky Magyar nem szerencsejáték-szolgáltató. Mi információt, útmutatót és
-                                    forrásokat biztosítunk. Célunk, hogy ösztönözzük a felelős játékot, és a
-                                    felhasználókat engedéllyel rendelkező, szabályozott platformokra irányítsuk.
+                                    forrásokat biztosítunk.
+                                    Célunk, hogy ösztönözzük a felelős játékot, és a felhasználókat engedéllyel
+                                    rendelkező, szabályozott platformokra irányítsuk.
                                 </p>
 
                                 <p class="role-paragraph mt-3">
@@ -347,6 +372,8 @@
                 </div>
             </div>
         </section>
+
+
 
 
 

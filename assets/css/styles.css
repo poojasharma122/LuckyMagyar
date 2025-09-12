@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Raleway:ital,wght@0,100..900;1,100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
 
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Manrope:wght@200..800&family=Raleway:ital,wght@0,100..900;1,100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Basic&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Tomorrow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 h1,
 h2,
@@ -52,7 +53,7 @@ ul {
 
 body {
     margin: 0;
-    background-color: #031B46;
+    background-color: #030f26;
 }
 
 .container {
@@ -304,12 +305,12 @@ header .container {
 .fullscreen-banner {
     position: relative;
     width: 100%;
-    height: 100vh;
-    background: url('../images/home_banner.jpg') center center/cover no-repeat;
+    height: 490px;
+    background: url("../images/home_banner.jpg") center center / cover no-repeat;
     display: flex;
     align-items: center;
     justify-content: center;
-    color: #fff;
+    color: rgb(255, 255, 255);
     text-align: center;
     overflow: hidden;
 }
@@ -338,61 +339,26 @@ header .container {
     display: inline-block;
     font-size: 3rem;
     font-weight: 700;
-    background: linear-gradient(90deg, #ff6b6b, #f06595, #845ef7);
-    background-size: 200% 200%;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    white-space: nowrap;
-    overflow: hidden;
-    border-right: 2px solid #fff;
-    animation: typing 3s steps(60, end) forwards, stopCursor 3s steps(60, end) forwards, gradientMove 3s ease infinite;
-    padding-bottom: 5px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    padding-bottom: 30px;
+
+    /* Add text shadow */
+    text-shadow: 0 3px 6px rgba(0, 0, 0, 0.8),
+        0 0 12px rgba(255, 255, 255, 0.2);
 }
 
-@keyframes typing {
-    from {
-        width: 0;
-    }
-
-    to {
-        width: 100%;
-    }
-}
-
-@keyframes stopCursor {
-
-    0%,
-    99% {
-        border-right-color: #fff;
-    }
-
-    100% {
-        border-right-color: transparent;
-    }
-
-    /* stops blinking after typing */
-}
-
-@keyframes gradientMove {
-    0% {
-        background-position: 0% 50%;
-    }
-
-    50% {
-        background-position: 100% 50%;
-    }
-
-    100% {
-        background-position: 0% 50%;
-    }
-}
-
+/* Paragraph text */
 .banner-content p {
-    font-size: 1.3rem;
-    margin: 30px 0;
-    /* opacity: 0; */
-    /* animation: fadeInUp 2s ease 5s forwards; */
-    /* appears after typing */
+    font-size: 18px;
+    font-weight: 500;
+    line-height: normal;
+    margin-bottom: 10px;
+    font-family: "Inter", sans-serif;
+    letter-spacing: 0.5px;
+
+    /* Add softer shadow for readability */
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.7);
 }
 
 /* @keyframes fadeInUp {
@@ -416,15 +382,7 @@ header .container {
 
 
 
-
-
-
-
-
-
-
-
-
+/* Section Heading */
 .section-heading {
     text-align: center;
     margin: 2rem 0 1rem;
@@ -432,52 +390,60 @@ header .container {
     color: #fff;
 }
 
-.keno-table {
-    background: #06275e;
-    border-radius: 12px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
-    overflow: hidden;
-    /* keeps rounded corners */
+/* Base Card Style */
+.keno-card {
+    border-radius: 15px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.5);
+    padding: 1.5rem;
+    color: #eaeaea;
+    transition: transform 0.3s ease, background 0.3s ease;
 }
 
-.keno-table th {
-    background: #0a3b89;
-    color: #fff;
-    text-align: center;
-    padding: 12px;
-    font-size: 0.95rem;
+.keno-card:hover {
+    transform: translateY(-5px);
 }
 
-.keno-table td {
-    text-align: center;
-    vertical-align: middle;
-    padding: 12px;
-    color: black;
+/* Card Variants */
+.keno-card.card-purple {
+    background: #5a2ca0;
+    /* purple for 1st & 3rd */
 }
 
-.keno-table tbody tr:nth-child(even) {
-    background-color: #08214d;
+.keno-card.card-purple:hover {
+    background: #6d35c7;
+    /* lighter purple on hover */
 }
 
-.winner {
-    color: #00ff99;
-    font-weight: bold;
+.keno-card.card-blue {
+    background: #2368d9;
+    /* blue for 2nd card */
 }
 
-.loser {
-    color: #ff4d4d;
-    font-weight: bold;
+.keno-card.card-blue:hover {
+    background: #317af0;
+    /* lighter blue on hover */
 }
 
-.footer-note {
-    text-align: center;
-    margin-top: 2rem;
-    font-size: 0.85rem;
-    color: #aaa;
+/* Card Header (Date + Draw ID) */
+.keno-date {
+    font-size: 1rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    color: #f8f8f8;
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.6);
 }
 
-.section-table-para {
-    color: #00ff99;
+.draw-id {
+    font-size: 0.9rem;
+    color: #d0d0d0;
+}
+
+/* Lottery Numbers */
+.keno-numbers {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    margin-bottom: 1rem;
 }
 
 .keno-number {
@@ -487,28 +453,47 @@ header .container {
     width: 40px;
     height: 40px;
     border-radius: 50%;
-    background: #5a6673;
-    /* gray circle background */
+    background: rgba(255, 255, 255, 0.25);
     color: #fff;
     font-weight: bold;
-    margin: 2px;
-    font-size: 0.9rem;
+    font-size: 0.95rem;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+    transition: transform 0.2s ease, background 0.2s ease;
 }
 
-.table-responsive-sm {
-    overflow-x: auto;
-    -webkit-overflow-scrolling: touch;
+.keno-number:hover {
+    background: rgba(255, 255, 255, 0.4);
+    transform: scale(1.1);
 }
 
-.keno-table table {
-    white-space: nowrap;
-    /* prevent text and numbers from breaking */
+/* Jackpot Status */
+.keno-status {
+    font-size: 0.95rem;
+    font-weight: bold;
+    margin-top: 0.5rem;
 }
 
-.keno-table th,
-.keno-table td {
-    white-space: nowrap;
-    /* keep content in one line */
+.winner {
+    color: #00ff99;
+    text-shadow: 0 0 6px rgba(0, 255, 153, 0.7);
+}
+
+.loser {
+    color: #ff4d4d;
+    text-shadow: 0 0 6px rgba(255, 77, 77, 0.7);
+}
+
+/* Footer Note */
+.footer-note {
+    text-align: center;
+    margin-top: 2rem;
+    font-size: 0.85rem;
+    color: #aaa;
+}
+
+/* Section Subtext */
+.section-table-para {
+    color: #00ff99;
 }
 
 
@@ -527,32 +512,22 @@ header .container {
 
 
 
+/* Section background (gradient from image) */
+.accordion-section {
+    position: relative;
+    /* needed for shapes */
+    background: linear-gradient(to bottom, #3a0d5d, #e13a79);
+    overflow: hidden;
+    /* hide overflow of shapes */
+}
 
+.accordion-section>.container {
+    padding-top: 25px !important;
+    min-height: 510px;
+    padding-bottom: 0 !important;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/* Section heading */
 .section-heading {
     text-align: center;
     margin-bottom: 2rem;
@@ -560,17 +535,22 @@ header .container {
     color: #fff;
 }
 
+/* Accordion button default (collapsed) */
 .accordion-button {
-    background-color: #06275e;
-    color: #fff;
+    background: #3a0d5d;
+    /* dark purple */
+    color: #fff !important;
     font-weight: 600;
 }
 
+/* Accordion button active (expanded) */
 .accordion-button:not(.collapsed) {
-    background-color: #0a3b89;
-    color: #fff;
+    background: #e13a79;
+    /* pink tone */
+    color: #fff !important;
 }
 
+/* Accordion items */
 .accordion-item {
     border: none;
     margin-bottom: 10px;
@@ -579,28 +559,74 @@ header .container {
     box-shadow: 0 3px 10px rgba(0, 0, 0, 0.4);
 }
 
+/* Accordion body */
 .accordion-body {
     background-color: white;
     color: black;
 }
 
-.accordion-button {
-    color: #fff !important;
-    /* make text white */
-    background-color: #06275e !important;
-    /* optional: custom dark background */
-}
-
-.accordion-button:not(.collapsed) {
-    color: #fff !important;
-    /* keep text white when expanded */
-    background-color: #0a3b89 !important;
-    /* optional: custom background when open */
-}
-
+/* Accordion arrow (white on dark background) */
 .accordion-button::after {
     filter: invert(1);
-    /* make the arrow icon visible on dark backgrounds */
+}
+
+/* === Decorative Geometric Shapes === */
+.accordion-section::before,
+.accordion-section::after {
+    content: "";
+    position: absolute;
+    border-radius: 50%;
+    opacity: 0.15;
+    z-index: 0;
+}
+
+/* Large circle (left top) */
+.accordion-section::before {
+    width: 200px;
+    height: 200px;
+    background: #fff;
+    top: 40px;
+    left: -80px;
+}
+
+/* Large rectangle (right bottom) */
+.accordion-section::after {
+    width: 300px;
+    height: 120px;
+    background: #000;
+    bottom: 60px;
+    right: -100px;
+    border-radius: 20px;
+    opacity: 0.1;
+}
+
+/* Extra shapes */
+.accordion-section .shape-square,
+.accordion-section .shape-circle {
+    position: absolute;
+    opacity: 0.15;
+    z-index: 0;
+}
+
+/* Small tilted square */
+.accordion-section .shape-square {
+    width: 100px;
+    height: 100px;
+    background: #fff;
+    top: 150px;
+    right: 50px;
+    transform: rotate(25deg);
+    border-radius: 8px;
+}
+
+/* Medium circle */
+.accordion-section .shape-circle {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    background: #000;
+    left: 30%;
+    bottom: 80px;
 }
 
 
@@ -629,32 +655,71 @@ header .container {
 
 
 
-
-
-
-
-
-
-
-
-
-
-/* Section specific */
+/* ================================
+   WHY LUCKY SECTION
+================================= */
 .why-lucky-section {
+    position: relative;
     padding: 60px 0;
-    overflow-x: hidden;
-    /* Prevents horizontal scroll */
+    overflow: hidden;
+    background: linear-gradient(135deg, #2a0a4d, #0a0033);
 }
 
+/* Diagonal stripes effect */
+.why-lucky-section::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image:
+        linear-gradient(135deg, rgba(255, 255, 255, 0.05) 20%, transparent 20%),
+        linear-gradient(135deg, transparent 75%, rgba(255, 255, 255, 0.03) 75%);
+    background-size: 80px 80px;
+    z-index: 0;
+}
+
+/* Starry particle dots */
+.why-lucky-section::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 200%;
+    height: 200%;
+    background-image: radial-gradient(rgba(255, 255, 255, 0.15) 1px, transparent 1px);
+    background-size: 50px 50px;
+    animation: moveParticles 40s linear infinite;
+    z-index: 0;
+}
+
+/* Particle slow drift animation */
+@keyframes moveParticles {
+    from {
+        transform: translate(0, 0);
+    }
+
+    to {
+        transform: translate(-200px, -200px);
+    }
+}
+
+/* Heading */
 .why-lucky-heading {
     text-align: center;
     margin-bottom: 2rem;
     font-weight: bold;
     color: #fff;
+    position: relative;
+    z-index: 1;
+    font-size: 2rem;
+    letter-spacing: 1px;
 }
 
+/* Cards */
 .why-lucky-card {
-    background: #06275e;
+    background: linear-gradient(to bottom, #5a34f2, #c176d6);
     border-radius: 15px;
     padding: 1.5rem;
     text-align: center;
@@ -663,14 +728,20 @@ header .container {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
+    color: #fff;
+    position: relative;
+    z-index: 1;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
 }
 
+/* Card hover effect */
 .why-lucky-card:hover {
     transform: translateY(-8px);
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.6);
-    background: #0a3b89;
+    background: linear-gradient(to bottom, #6b4df8, #d18ae0);
 }
 
+/* Card image */
 .why-lucky-image {
     width: 70px;
     height: 70px;
@@ -678,16 +749,23 @@ header .container {
     margin: 0 auto 1rem;
 }
 
+/* Card title */
 .why-lucky-title {
     font-size: 1.25rem;
     font-weight: bold;
     margin-bottom: 0.5rem;
-    color: #00ff99;
+    color: white;
+    position: relative;
+    z-index: 1;
 }
 
+/* Card text */
 .why-lucky-text {
     font-size: 0.95rem;
-    color: #d1d1d1;
+    color: #f9f9f9;
+    position: relative;
+    z-index: 1;
+    line-height: 1.5;
 }
 
 
@@ -698,34 +776,138 @@ header .container {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ==========================
+   KENO "How it Works" Section
+=========================== */
 
 /* Section */
 .keno-how-section {
+    position: relative;
     padding: 80px 0;
-    background: linear-gradient(135deg, #f5f9ff, #eaf3ff);
+    background: linear-gradient(135deg, #6a5af9, #3e8ef7);
     border-radius: 25px;
+    color: #fff;
+    overflow: hidden;
+    /* keep shapes inside */
 }
 
-/* Headings */
+/* ==========================
+   Geometric Background Shapes
+=========================== */
+.keno-how-section::before,
+.keno-how-section::after {
+    content: "";
+    position: absolute;
+    z-index: 0;
+    opacity: 0.25;
+    pointer-events: none;
+}
+
+/* Rectangle */
+.keno-how-section::before {
+    width: 250px;
+    height: 120px;
+    background: rgba(255, 255, 255, 0.15);
+    top: -40px;
+    left: -60px;
+    transform: rotate(25deg);
+    border-radius: 12px;
+}
+
+/* Square */
+.keno-how-section::after {
+    width: 120px;
+    height: 120px;
+    background: rgba(255, 255, 255, 0.1);
+    bottom: 40px;
+    right: 50px;
+    transform: rotate(15deg);
+}
+
+/* Large Triangle */
+.triangle-shape {
+    position: absolute;
+    bottom: 20%;
+    left: 10%;
+    width: 0;
+    height: 0;
+    border-left: 80px solid transparent;
+    border-right: 80px solid transparent;
+    border-bottom: 140px solid rgba(255, 255, 255, 0.2);
+    opacity: 0.3;
+    transform: rotate(-20deg);
+    z-index: 0;
+}
+
+/* Small Triangle */
+.triangle-small {
+    position: absolute;
+    top: 15%;
+    right: 20%;
+    width: 0;
+    height: 0;
+    border-left: 40px solid transparent;
+    border-right: 40px solid transparent;
+    border-bottom: 70px solid rgba(255, 255, 255, 0.18);
+    opacity: 0.35;
+    transform: rotate(10deg);
+    z-index: 0;
+}
+
+/* ==========================
+   Headings and Text
+=========================== */
 .keno-how-heading {
+    position: relative;
     font-weight: 700;
     text-align: center;
     margin-bottom: 1.5rem;
-    color: #0b2e66;
+    color: #fff;
     font-size: 2.2rem;
+    z-index: 1;
 }
 
 .keno-how-text {
+    position: relative;
     font-size: 1.1rem;
-    color: #4a5568;
+    color: rgba(255, 255, 255, 0.85);
     text-align: center;
     max-width: 700px;
     margin: 0 auto 3rem;
+    z-index: 1;
 }
 
-/* Feature Cards */
+/* ==========================
+   Feature Cards
+=========================== */
 .keno-feature-card {
-    background: rgba(255, 255, 255, 0.8);
+    position: relative;
+    background: rgba(255, 255, 255, 0.1);
     border-radius: 20px;
     padding: 2rem 1.5rem;
     text-align: center;
@@ -733,44 +915,51 @@ header .container {
     backdrop-filter: blur(12px);
     border: 1px solid rgba(255, 255, 255, 0.3);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    color: #fff;
+    z-index: 1;
 }
 
 .keno-feature-card:hover {
     transform: translateY(-6px);
-    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.25);
 }
 
-/* Icons */
+/* Feature Icons */
 .keno-feature-icon {
     font-size: 2.5rem;
     margin-bottom: 1rem;
-    color: #0b6cf2;
+    color: #ffd700;
 }
 
-/* Titles */
+/* Feature Titles */
 .keno-feature-title {
     font-size: 1.3rem;
     font-weight: 600;
     margin-bottom: 0.5rem;
-    color: #0b2e66;
+    color: #fff;
 }
 
-/* Text */
+/* Feature Text */
 .keno-feature-text {
     font-size: 1rem;
-    color: #555;
+    color: rgba(255, 255, 255, 0.9);
 }
 
-/* Image styling */
+/* ==========================
+   Images
+=========================== */
 .keno-how-image {
     max-width: 90%;
     border-radius: 25px;
-    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
-    transition: transform 0.4s ease;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.5);
+    transition: transform 0.4s ease, filter 0.4s ease;
+    position: relative;
+    z-index: 1;
 }
 
 .keno-how-image:hover {
     transform: scale(1.05);
+    filter: brightness(1.1);
 }
 
 
@@ -803,34 +992,131 @@ header .container {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* Section Background */
+/* === SECTION BACKGROUND === */
 .keno-tips-section {
+    position: relative;
     text-align: center;
-    color: white;
-
-    padding: 5rem 0;
+    color: #fff;
+    padding: 5rem 0 10rem;
+    background: linear-gradient(180deg, #2c0052 0%, #8a0f6f 50%, #e31d75 100%);
+    overflow: hidden;
 }
 
-/* Heading */
+.keno-tips-section>.container {
+    position: relative;
+    z-index: 5;
+    /* Ensures content stays above floating shapes */
+}
+
+/* === DECORATIVE SHAPES === */
+.keno-tips-section .shape {
+    position: absolute;
+    border-radius: 50%;
+    filter: blur(2px);
+    box-shadow: 0 0 30px rgba(255, 255, 255, 0.4);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    opacity: 0.7;
+    z-index: 1;
+    animation: float 6s ease-in-out infinite;
+}
+
+/* Brighter shape variations */
+.shape-1 {
+    width: 60px;
+    height: 60px;
+    top: 10%;
+    left: 10%;
+    background: rgba(0, 255, 255, 0.6);
+}
+
+.shape-2 {
+    width: 40px;
+    height: 40px;
+    top: 25%;
+    left: 35%;
+    background: rgba(255, 0, 255, 0.6);
+}
+
+.shape-3 {
+    width: 80px;
+    height: 80px;
+    top: 5%;
+    right: 15%;
+    background: rgba(255, 255, 0, 0.6);
+}
+
+.shape-4 {
+    width: 50px;
+    height: 50px;
+    top: 40%;
+    right: 25%;
+    background: rgba(0, 255, 0, 0.6);
+}
+
+.shape-5 {
+    width: 70px;
+    height: 70px;
+    bottom: 15%;
+    left: 20%;
+    background: rgba(0, 255, 255, 0.6);
+}
+
+.shape-6 {
+    width: 60px;
+    height: 60px;
+    bottom: 25%;
+    right: 10%;
+    background: rgba(255, 0, 255, 0.6);
+}
+
+.shape-7 {
+    width: 45px;
+    height: 45px;
+    top: 60%;
+    left: 50%;
+    background: rgba(255, 255, 0, 0.6);
+}
+
+.shape-8 {
+    width: 55px;
+    height: 55px;
+    top: 35%;
+    left: 70%;
+    background: rgba(0, 255, 0, 0.6);
+}
+
+.shape-9 {
+    width: 65px;
+    height: 65px;
+    bottom: 10%;
+    left: 60%;
+    background: rgba(0, 255, 255, 0.6);
+}
+
+.shape-10 {
+    width: 50px;
+    height: 50px;
+    bottom: 30%;
+    right: 50%;
+    background: rgba(255, 0, 255, 0.6);
+}
+
+/* === FLOATING ANIMATION === */
+@keyframes float {
+    0% {
+        transform: translateY(0) rotate(0deg);
+    }
+
+    50% {
+        transform: translateY(-10px) rotate(15deg);
+    }
+
+    100% {
+        transform: translateY(0) rotate(0deg);
+    }
+}
+
+/* === TEXT STYLES === */
 .keno-tips-heading {
     font-size: 2rem;
     font-weight: 700;
@@ -844,11 +1130,11 @@ header .container {
     margin: 0 auto 3rem auto;
 }
 
-/* Tip Cards */
+/* === TIP CARD === */
 .tip-card {
     background: #fff;
     border-radius: 20px;
-    padding: 2rem 1.5rem 1rem 1.5rem;
+    padding: 2rem 1.5rem 1rem;
     transition: all 0.4s ease;
     box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
     display: flex;
@@ -861,39 +1147,31 @@ header .container {
     box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
 }
 
-/* Tip Image Container */
+/* === TIP IMAGE === */
 .tip-image {
     width: 100%;
     height: 200px;
-    /* same height for all images */
     margin-bottom: 1rem;
     overflow: hidden;
     border-radius: 15px;
-
     display: flex;
-    /* flex ensures img can stretch */
     align-items: center;
     justify-content: center;
 }
 
-/* Image inside container */
 .tip-image img {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    /* fills container without distortion */
     transition: transform 0.5s ease, box-shadow 0.5s ease;
 }
 
-/* Hover effect */
 .tip-card:hover .tip-image img {
     transform: scale(1.05) translateY(-5px);
     box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
 }
 
-
-
-/* Title */
+/* === CARD TEXT === */
 .tip-title {
     font-size: 1.3rem;
     font-weight: 600;
@@ -902,7 +1180,6 @@ header .container {
     text-align: center;
 }
 
-/* Text */
 .tip-text {
     font-size: 0.95rem;
     color: #555;
@@ -927,87 +1204,153 @@ header .container {
 
 
 
-
-
-
-
-
-
-
-
-
-/* Section */
+/* Section padding */
 .review-section {
     padding: 50px 0 100px;
 }
 
+/* Reviews container with gradient */
 .reviews-section {
-    background-color: #04173b;
+    background: linear-gradient(to bottom, #3a0d5d, #e13a79);
     padding: 60px 0;
-    border-radius: 15px;
+    border-radius: 20px;
+    position: relative;
+    overflow: hidden;
 }
 
+/* Decorative ribbon-like shapes */
+.reviews-section::before,
+.reviews-section::after {
+    content: "";
+    position: absolute;
+    border-radius: 50%;
+    z-index: 0;
+    opacity: 0.15;
+}
+
+.reviews-section::before {
+    width: 300px;
+    height: 300px;
+    background: rgba(255, 255, 255, 0.1);
+    top: -50px;
+    left: -50px;
+    transform: rotate(45deg);
+}
+
+.reviews-section::after {
+    width: 250px;
+    height: 250px;
+    background: rgba(255, 255, 255, 0.08);
+    bottom: -50px;
+    right: -30px;
+    transform: rotate(-30deg);
+}
+
+/* Floating circle shapes */
+.reviews-section .shape {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.1);
+    z-index: 0;
+    animation: float 7s ease-in-out infinite;
+}
+
+.shape-1 {
+    top: 10%;
+    left: 20%;
+}
+
+.shape-2 {
+    top: 40%;
+    right: 15%;
+}
+
+.shape-3 {
+    bottom: 20%;
+    left: 30%;
+}
+
+.shape-4 {
+    bottom: 25%;
+    right: 25%;
+}
+
+@keyframes float {
+    0% {
+        transform: translateY(0) rotate(0deg);
+    }
+
+    50% {
+        transform: translateY(-10px) rotate(20deg);
+    }
+
+    100% {
+        transform: translateY(0) rotate(0deg);
+    }
+}
+
+/* Heading */
 .reviews-heading {
     text-align: center;
     font-weight: bold;
     margin-bottom: 2rem;
     color: #fff;
+    font-size: 2rem;
 }
 
-/* Carousel */
+/* Review Card */
+/* Review Card */
 .review-card {
-    background: #062c6a;
-    border-radius: 15px;
-    padding: 2rem;
+    background: rgba(20, 0, 30, 0.85);
+    /* semi-transparent dark purple */
+    border-radius: 20px;
+    padding: 4rem;
     text-align: center;
-    color: #e0e0e0;
-    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.6);
+    color: #fff;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.5);
     max-width: 700px;
     margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Remove circular wave pattern */
+.review-card::before {
+    display: none;
+    /* hides the previous circular effect */
+}
+
+/* Review text and author remain the same */
+.review-card p,
+.review-card .review-author {
+    position: relative;
+    z-index: 1;
 }
 
 .review-card p {
     font-size: 1rem;
     font-style: italic;
     margin-bottom: 1rem;
-    color: #f1f1f1;
+    color: #fff;
 }
 
 .review-author {
     font-weight: bold;
-    color: #00ffcc;
+    color: #ffe066;
 }
 
 /* Carousel controls */
 .reviews-section .carousel-control-prev-icon,
-.carousel-control-next-icon {
+.reviews-section .carousel-control-next-icon {
     filter: invert(1);
 }
 
+/* Carousel indicators */
 .reviews-section .carousel-indicators [data-bs-target] {
-    background-color: #00ffcc;
+    background-color: #ff99cc;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -1033,80 +1376,177 @@ header .container {
 
 
 .join-community-modern {
-    background: linear-gradient(135deg, #1a1a1a, #2c2c2c);
+    background: linear-gradient(135deg, #6a5af9, #3e8ef7);
     position: relative;
     overflow: hidden;
     border-radius: 40px 40px 0 0;
-    /* top-left, top-right, bottom-right, bottom-left */
+    padding: 5rem 0;
 }
 
-
+/* Background radial gradient */
 .join-community-modern .bg-shape {
     position: absolute;
     top: -50px;
     left: -50px;
     width: 200%;
     height: 200%;
-    background: radial-gradient(circle at center, rgba(255, 204, 0, 0.2), transparent 70%);
-    animation: rotate 20s linear infinite;
+    background: radial-gradient(circle at center, rgba(255, 255, 255, 0.1), transparent 70%);
+    animation: pulse 10s ease-in-out infinite;
     z-index: 0;
 }
 
-@keyframes rotate {
+@keyframes pulse {
+
+    0%,
+    100% {
+        transform: scale(1);
+        opacity: 0.3;
+    }
+
+    50% {
+        transform: scale(1.15);
+        opacity: 0.6;
+    }
+}
+
+/* Geometric shapes */
+.join-community-modern .shape {
+    position: absolute;
+    z-index: 0;
+    opacity: 0.15;
+}
+
+/* Large circle */
+.join-community-modern .shape.circle {
+    width: 300px;
+    height: 300px;
+    background: rgba(255, 255, 255, 0.08);
+    border-radius: 50%;
+    top: 30px;
+    left: 5%;
+    animation: float 12s ease-in-out infinite alternate;
+}
+
+/* Triangle */
+.join-community-modern .shape.triangle {
+    width: 0;
+    height: 0;
+    border-left: 100px solid transparent;
+    border-right: 100px solid transparent;
+    border-bottom: 160px solid rgba(255, 255, 255, 0.06);
+    top: 20%;
+    right: 10%;
+    transform: rotate(-10deg);
+    animation: float 14s ease-in-out infinite alternate-reverse;
+}
+
+/* Hexagon */
+.join-community-modern .shape.hexagon {
+    width: 120px;
+    height: 70px;
+    background: rgba(255, 255, 255, 0.05);
+    clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+    bottom: 15%;
+    left: 15%;
+    animation: float 16s ease-in-out infinite alternate;
+}
+
+/* Small circle */
+.join-community-modern .shape.small-circle {
+    width: 80px;
+    height: 80px;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 50%;
+    top: 60%;
+    right: 20%;
+    animation: float 18s ease-in-out infinite alternate-reverse;
+}
+
+/* Small triangle */
+.join-community-modern .shape.small-triangle {
+    width: 0;
+    height: 0;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-bottom: 80px solid rgba(255, 255, 255, 0.04);
+    bottom: 10%;
+    right: 5%;
+    transform: rotate(15deg);
+    animation: float 20s ease-in-out infinite alternate;
+}
+
+/* Floating animation */
+@keyframes float {
     0% {
-        transform: rotate(0deg);
+        transform: translateY(0) rotate(0deg);
+    }
+
+    50% {
+        transform: translateY(-20px) rotate(10deg);
     }
 
     100% {
-        transform: rotate(360deg);
+        transform: translateY(0) rotate(0deg);
     }
 }
 
+/* Card */
 .join-community-modern .card {
     position: relative;
     z-index: 1;
-    background: rgba(30, 30, 30, 0.95);
-    color: #f1f1f1;
-    transition: transform 0.3s, box-shadow 0.3s;
+    background: rgba(255, 255, 255, 0.05);
+    color: #fff;
     border: none;
+    border-radius: 20px;
+    backdrop-filter: blur(15px);
+    transition: transform 0.3s, box-shadow 0.3s;
 }
 
 .join-community-modern .card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.6);
+    transform: translateY(-8px);
+    box-shadow: 0 20px 50px rgba(255, 255, 255, 0.2);
 }
 
+/* Headings & text */
+.join-community-modern .community-heading {
+    color: #fff;
+    font-weight: 600;
+}
+
+.join-community-modern .community-text {
+    color: #f0f0f0;
+}
+
+/* Form input */
 .join-community-modern .form-control {
     border-radius: 50px;
     padding: 0.75rem 1.5rem;
     border: none;
     outline: none;
+    background: rgba(255, 255, 255, 0.15);
+    color: #fff;
+    transition: background 0.3s;
 }
 
+.join-community-modern .form-control::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+/* Button */
 .join-community-modern .btn-warning {
     border-radius: 50px;
     padding: 0.75rem 2rem;
     font-weight: bold;
+    background: linear-gradient(135deg, #ff6ec7, #ff8f70);
+    color: #fff;
+    border: none;
     transition: all 0.3s;
 }
 
 .join-community-modern .btn-warning:hover {
-    background-color: #e6b800;
-    color: #fff;
+    background: linear-gradient(135deg, #ff8f70, #ff6ec7);
+    transform: scale(1.05);
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -1290,18 +1730,20 @@ header .container {
 }
 
 .social-links a {
-    background-color: #00ffcc;
+    background: linear-gradient(135deg, #ff6ec7, #ff8f70);
+    /* ✅ fixed */
     color: #fff;
     margin: 0 5px;
     width: 2.5rem;
     height: 2.5rem;
-    border-radius: 8px;
+    border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
     transition: 0.4s all ease-in-out;
     padding: 5px;
 }
+
 
 .social-links a:hover {
     transform: translateY(-3px);
@@ -1327,8 +1769,18 @@ header .container {
     font-size: 1.7rem;
     font-weight: 600;
     margin-bottom: 15px;
-    color: #00ffcc;
+    background: linear-gradient(135deg, #ff6ec7, #ff8f70);
+    /* gradient applied */
+    -webkit-background-clip: text;
+    /* for Safari/Chrome */
+    -webkit-text-fill-color: transparent;
+    /* make the text show gradient */
+    background-clip: text;
+    /* standard */
+    color: transparent;
+    /* fallback */
 }
+
 
 .overflow-class {
     overflow: hidden;
@@ -1458,14 +1910,68 @@ header .container {
 
 
 
-
-
 /* General KENO Section Styling */
 .keno-section {
-    background: #031B46;
-    /* dark body background */
+    position: relative;
+    background: linear-gradient(to bottom, #2e0057 0%, #a70063 50%, #ff2381 100%);
     color: #fff;
-    padding-top: 80px;
+    padding: 80px 0;
+    overflow: hidden;
+    z-index: 1;
+    border-radius: 0 0 40px 40px;
+}
+
+/* Geometric Shapes */
+.keno-shape {
+    position: absolute;
+    background: rgba(255, 255, 255, 0.05);
+    pointer-events: none;
+    z-index: 0;
+    filter: blur(1px);
+}
+
+.shape-1 {
+    width: 200px;
+    height: 200px;
+    border-radius: 20px;
+    transform: rotate(45deg);
+    bottom: 10%;
+    left: -60px;
+}
+
+.shape-2 {
+    width: 100px;
+    height: 100px;
+    border-radius: 10px;
+    top: 20%;
+    left: 65%;
+    transform: rotate(15deg);
+}
+
+.shape-3 {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    top: 15%;
+    left: 40%;
+}
+
+.shape-4 {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    top: -100px;
+    right: -100px;
+}
+
+/* SVG Curve */
+.keno-section svg.curve {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 80px;
+    z-index: 1;
 }
 
 /* Content Styling */
@@ -1476,6 +1982,8 @@ header .container {
     opacity: 0;
     transform: translateY(20px);
     animation: fadeUp 1s forwards;
+    position: relative;
+    z-index: 2;
 }
 
 /* Fade-up animation */
@@ -1492,6 +2000,8 @@ header .container {
     border-radius: 20px;
     box-shadow: 0 10px 35px rgba(0, 0, 0, 0.5);
     transition: transform 0.5s ease, box-shadow 0.5s ease;
+    position: relative;
+    z-index: 2;
 }
 
 /* Image Hover Animation */
@@ -1512,9 +2022,6 @@ header .container {
         font-size: 0.95rem;
     }
 }
-
-
-
 
 
 
@@ -1681,6 +2188,109 @@ header .container {
     outline-offset: 6px;
 }
 
+/* Szerepünk Section */
+
+.role-section {
+    position: relative;
+    color: #fff;
+    padding: 100px 0 80px;
+    overflow: hidden;
+    /* keep the gradient background */
+    background: linear-gradient(135deg, #2a0a4d, #0a0033);
+}
+
+/* Background shapes container */
+.bg-shapes {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 0;
+}
+
+/* Base style for shapes */
+.shape {
+    position: absolute;
+    background: rgba(255, 255, 255, 0.12);
+    filter: blur(10px);
+    transition: opacity 0.3s ease;
+}
+
+/* Circles */
+.circle {
+    border-radius: 50%;
+}
+
+/* Squares */
+.square {
+    border-radius: 15px;
+}
+
+/* Individual shapes with different sizes and positions */
+.shape.circle.shape-1 {
+    width: 140px;
+    height: 140px;
+    top: 20%;
+    right: 10%;
+    background: rgba(255, 255, 255, 0.15);
+}
+
+.shape.circle.shape-2 {
+    width: 80px;
+    height: 80px;
+    top: 5%;
+    left: 15%;
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.shape.square.shape-1 {
+    width: 100px;
+    height: 100px;
+    bottom: 15%;
+    left: 10%;
+    background: rgba(255, 255, 255, 0.13);
+    transform: rotate(15deg);
+}
+
+.shape.square.shape-2 {
+    width: 90px;
+    height: 90px;
+    bottom: 30%;
+    right: 15%;
+    background: rgba(255, 255, 255, 0.1);
+    transform: rotate(-10deg);
+}
+
+/* Role Card tweaks to stay on top */
+.role-card {
+    position: relative;
+    z-index: 1;
+    background: linear-gradient(135deg, #6a8de8, #7f7bf2);
+    border-radius: 24px;
+    /* bigger rounding like in image */
+    box-shadow: 0 10px 30px rgba(127, 123, 242, 0.5);
+    /* subtle purple shadow */
+    border: none;
+    /* remove old border */
+    padding: 2.5rem 3rem;
+    /* adjust padding if needed */
+    color: white;
+    /* text color for contrast */
+    transform: translateY(12px);
+    opacity: 0;
+    transition: transform 600ms cubic-bezier(.16, .84, .24, 1), opacity 600ms ease;
+}
+
+/* Optional: change the text color inside for better contrast */
+.role-paragraph {
+    color: #e1e5f6;
+}
+
+
+/* Keep your existing styles for role-head, role-title, role-accent, etc. */
+
 
 
 
@@ -1755,28 +2365,35 @@ header .container {
 
 
 
-
-
-
-
-/* Contact Section */
+/* === Contact Section === */
 .contact-section {
-    background-color: #031B46;
+    background: linear-gradient(135deg, #6A11CB, #2575FC);
     color: #fff;
-    padding: 80px 0 0;
+    padding: 100px 0;
+    position: relative;
+    /* z-index: 1; */
+    margin-top: -40px;
 }
 
+/* === Contact Card === */
 .contact-card {
-    background: linear-gradient(135deg, rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.02));
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.12), rgba(255, 255, 255, 0.06));
     border: 1px solid rgba(255, 255, 255, 0.15);
+    border-radius: 16px;
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    color: #fff;
 }
 
+/* Heading */
 .contact-heading {
     font-size: 2rem;
     font-weight: 700;
-    color: #ffcc00;
+    color: #ffffff;
 }
 
+/* Contact Info */
 .contact-item {
     font-size: 1.2rem;
 }
@@ -1787,16 +2404,199 @@ header .container {
 }
 
 .contact-link {
-    color: #ffcc00;
+    color: #ffe082;
     text-decoration: none;
     transition: color 0.3s ease;
 }
 
 .contact-link:hover {
-    color: #fff176;
+    color: #fff;
 }
 
 .contact-response {
     font-size: 1rem;
-    color: #ddd;
+    color: #e0e0e0;
+}
+
+/* === Background Shapes === */
+.bg-shape {
+    position: absolute;
+    opacity: 0.08;
+    z-index: 0;
+    pointer-events: none;
+    animation: float 12s ease-in-out infinite;
+}
+
+.shape-circle {
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    background: #fff;
+    top: 20%;
+    left: -60px;
+}
+
+.shape-square {
+    width: 120px;
+    height: 120px;
+    background: #fff;
+    top: 65%;
+    right: -40px;
+    transform: rotate(30deg);
+}
+
+.shape-triangle {
+    width: 0;
+    height: 0;
+    border-left: 80px solid transparent;
+    border-right: 80px solid transparent;
+    border-bottom: 140px solid #fff;
+    bottom: 0%;
+    left: 40%;
+    opacity: 0.06;
+}
+
+/* Animation */
+@keyframes float {
+
+    0%,
+    100% {
+        transform: translateY(0) rotate(0deg);
+    }
+
+    50% {
+        transform: translateY(-15px) rotate(5deg);
+    }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .contact-heading {
+        font-size: 1.8rem;
+    }
+
+    .shape-circle,
+    .shape-square,
+    .shape-triangle {
+        display: none;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Section base without background */
+
+
+/* Geometric shapes */
+/* Geometric shapes (brighter and more visible) */
+.bg-shape {
+    position: absolute;
+    background: rgba(255, 255, 255, 0.15);
+    /* increased opacity */
+    z-index: 0;
+    filter: blur(4px);
+    pointer-events: none;
+    border-radius: 20px;
+    box-shadow: 0 0 30px rgba(255, 255, 255, 0.1);
+    /* subtle glow */
+}
+
+
+.bg-shape-1 {
+    width: 150px;
+    height: 150px;
+    top: 10%;
+    left: -40px;
+    transform: rotate(45deg);
+}
+
+.bg-shape-2 {
+    width: 80px;
+    height: 80px;
+    top: 30%;
+    right: 10%;
+    border-radius: 50%;
+}
+
+.bg-shape-3 {
+    width: 100px;
+    height: 100px;
+    bottom: 15%;
+    left: 20%;
+    transform: rotate(-15deg);
+}
+
+.bg-shape-4 {
+    width: 200px;
+    height: 200px;
+    bottom: 70px;
+    right: -60px;
+    border-radius: 50%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.lizard-section {
+    padding: 90px 0;
+    min-height: 710px;
+    border-radius: 40px 40px 0 0;
 }

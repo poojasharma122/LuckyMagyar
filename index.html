@@ -95,7 +95,7 @@
     <main>
         <section class="fullscreen-banner">
             <div class="container">
-                <div class="banner-content">
+                <div class="banner-content overflow-class" data-aos="fade-up">
                     <h1 class="typing-text">Lucky Magyar – Magyarország KENO útmutatója</h1>
                     <p>
                         A KENO az egyik legizgalmasabb és leggyorsabb lottó jellegű játék, és a Lucky Magyar azért jött
@@ -108,88 +108,98 @@
                 </div>
             </div>
         </section>
-        <section>
-            <div class="container py-2 py-md-3 py-lg-5 overflow-class" data-aos="fade-up" data-aos-duration="3000">
+
+
+
+
+
+
+
+
+
+        <section style="background-color: #030f26;  " class="overflow-class">
+            <div class="container py-2 py-sm-3 py-md-3 py-xl-5 " data-aos="fade-up" data-aos-duration="2000">
 
                 <!-- Title -->
                 <h2 class="section-heading">Legutóbbi eredmények</h2>
-                <p class="text-center mb-4 text-white">Kövesse nyomon a legfrissebb KENO sorsolásokat. Az eredmények
-                    rendszeresen frissülnek, így könnyen
-                    összehasonlíthatja a nyerőszámokat saját tippjeivel.</p>
+                <p class="text-center mb-4 text-white">
+                    Kövesse nyomon a legfrissebb KENO sorsolásokat. Az eredmények rendszeresen frissülnek, így könnyen
+                    összehasonlíthatja a nyerőszámokat saját tippjeivel.
+                </p>
                 <p class="text-center mb-4 section-table-para">
                     Legújabb KENO eredmények (Mintaadat – fejlesztői frissítéssel cserélhető):
                 </p>
 
-                <!-- Responsive Table -->
-                <!-- Responsive Table Wrapper -->
-                <div class="keno-table">
-                    <div class="table-responsive-sm">
-                        <table class="table table-borderless mb-0">
-                            <thead>
-                                <tr>
-                                    <th>Dátum</th>
-                                    <th>Sorsolás #</th>
-                                    <th>Nyerőszámok</th>
-                                    <th>Jackpot nyertes</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>2025. szept. 8.</td>
-                                    <td>1425</td>
-                                    <td>
-                                        <span class="keno-number">03</span>
-                                        <span class="keno-number">07</span>
-                                        <span class="keno-number">12</span>
-                                        <span class="keno-number">19</span>
-                                        <span class="keno-number">24</span>
-                                        <span class="keno-number">31</span>
-                                        <span class="keno-number">37</span>
-                                        <span class="keno-number">41</span>
-                                        <span class="keno-number">49</span>
-                                        <span class="keno-number">56</span>
-                                    </td>
-                                    <td><span class="loser">Nem</span></td>
-                                </tr>
-                                <tr>
-                                    <td>2025. szept. 7.</td>
-                                    <td>1424</td>
-                                    <td>
-                                        <span class="keno-number">05</span>
-                                        <span class="keno-number">09</span>
-                                        <span class="keno-number">16</span>
-                                        <span class="keno-number">22</span>
-                                        <span class="keno-number">28</span>
-                                        <span class="keno-number">35</span>
-                                        <span class="keno-number">40</span>
-                                        <span class="keno-number">46</span>
-                                        <span class="keno-number">50</span>
-                                        <span class="keno-number">63</span>
-                                    </td>
-                                    <td><span class="winner">Igen</span></td>
-                                </tr>
-                                <tr>
-                                    <td>2025. szept. 6.</td>
-                                    <td>1423</td>
-                                    <td>
-                                        <span class="keno-number">02</span>
-                                        <span class="keno-number">08</span>
-                                        <span class="keno-number">15</span>
-                                        <span class="keno-number">18</span>
-                                        <span class="keno-number">25</span>
-                                        <span class="keno-number">34</span>
-                                        <span class="keno-number">39</span>
-                                        <span class="keno-number">42</span>
-                                        <span class="keno-number">55</span>
-                                        <span class="keno-number">67</span>
-                                    </td>
-                                    <td><span class="loser">Nem</span></td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                </div>
+                <!-- Cards Layout -->
+                <div class="row g-4">
 
+                    <!-- Card 1 -->
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="keno-card card-purple h-100">
+                            <div class="keno-card-body">
+                                <h5 class="keno-date">2025. szept. 8. • <span class="draw-id">#1425</span></h5>
+                                <div class="keno-numbers">
+                                    <span class="keno-number">03</span>
+                                    <span class="keno-number">07</span>
+                                    <span class="keno-number">12</span>
+                                    <span class="keno-number">19</span>
+                                    <span class="keno-number">24</span>
+                                    <span class="keno-number">31</span>
+                                    <span class="keno-number">37</span>
+                                    <span class="keno-number">41</span>
+                                    <span class="keno-number">49</span>
+                                    <span class="keno-number">56</span>
+                                </div>
+                                <p class="keno-status loser">Jackpot nyertes: Nem</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 2 -->
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="keno-card card-blue h-100">
+                            <div class="keno-card-body">
+                                <h5 class="keno-date">2025. szept. 7. • <span class="draw-id">#1424</span></h5>
+                                <div class="keno-numbers">
+                                    <span class="keno-number">05</span>
+                                    <span class="keno-number">09</span>
+                                    <span class="keno-number">16</span>
+                                    <span class="keno-number">22</span>
+                                    <span class="keno-number">28</span>
+                                    <span class="keno-number">35</span>
+                                    <span class="keno-number">40</span>
+                                    <span class="keno-number">46</span>
+                                    <span class="keno-number">50</span>
+                                    <span class="keno-number">63</span>
+                                </div>
+                                <p class="keno-status winner">Jackpot nyertes: Igen 🎉</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 3 -->
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="keno-card card-purple h-100">
+                            <div class="keno-card-body">
+                                <h5 class="keno-date">2025. szept. 6. • <span class="draw-id">#1423</span></h5>
+                                <div class="keno-numbers">
+                                    <span class="keno-number">02</span>
+                                    <span class="keno-number">08</span>
+                                    <span class="keno-number">15</span>
+                                    <span class="keno-number">18</span>
+                                    <span class="keno-number">25</span>
+                                    <span class="keno-number">34</span>
+                                    <span class="keno-number">39</span>
+                                    <span class="keno-number">42</span>
+                                    <span class="keno-number">55</span>
+                                    <span class="keno-number">67</span>
+                                </div>
+                                <p class="keno-status loser">Jackpot nyertes: Nem</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
 
                 <!-- Footer -->
                 <p class="footer-note">
@@ -197,7 +207,36 @@
                 </p>
             </div>
         </section>
-        <section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <section class="accordion-section">
+            <!-- Decorative Shapes -->
+            <div class="shape-square"></div>
+            <div class="shape-circle"></div>
+
             <div class="container py-2 py-md-3 py-lg-5">
                 <h2 class="section-heading">Mit kínálunk?</h2>
 
@@ -208,14 +247,15 @@
                     <div class="accordion-item">
                         <h2 class="accordion-header" id="headingOne">
                             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#collapseOne">
+                                data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
                                 1. Megbízható platform összehasonlítások
                             </button>
                         </h2>
                         <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#offerAccordion">
                             <div class="accordion-body">
                                 Csak olyan KENO szolgáltatókat mutatunk be, amelyek teljes mértékben engedéllyel
-                                rendelkeznek és szabályozottak.
+                                rendelkeznek
+                                és szabályozottak.
                                 Ez biztosítja, hogy a játékosok mindig biztonságban érezzék magukat játék közben.
                             </div>
                         </div>
@@ -225,15 +265,14 @@
                     <div class="accordion-item">
                         <h2 class="accordion-header" id="headingTwo">
                             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#collapseTwo">
+                                data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
                                 2. Tanulási segédanyagok
                             </button>
                         </h2>
                         <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#offerAccordion">
                             <div class="accordion-body">
                                 Legyen kezdő vagy tapasztalt játékos, a Lucky Magyar útmutatókat, lépésről-lépésre
-                                magyarázatokat
-                                és tippeket kínál a magyar játékosok számára.
+                                magyarázatokat és tippeket kínál a magyar játékosok számára.
                             </div>
                         </div>
                     </div>
@@ -242,7 +281,7 @@
                     <div class="accordion-item">
                         <h2 class="accordion-header" id="headingThree">
                             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#collapseThree">
+                                data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
                                 3. Exkluzív promóciók
                             </button>
                         </h2>
@@ -258,7 +297,7 @@
                     <div class="accordion-item">
                         <h2 class="accordion-header" id="headingFour">
                             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#collapseFour">
+                                data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
                                 4. Fókusz a felelős játékra
                             </button>
                         </h2>
@@ -274,11 +313,26 @@
                 </div>
             </div>
         </section>
-        <section class="why-lucky-section">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <section class="why-lucky-section overflow-class">
             <div class="container">
                 <h2 class="why-lucky-heading">Miért válassza a Lucky Magyart?</h2>
 
-                <div class="row g-4 justify-content-center">
+                <div class="row g-4 justify-content-center " data-aos="fade-up" data-aos-duration="1000">
 
                     <!-- Card 1 -->
                     <div class="col-12 col-sm-6 col-lg-3">
@@ -330,8 +384,14 @@
             </div>
         </section>
 
-        <section class="keno-how-section overflow-class" data-aos="fade-up" data-aos-duration="3000">
+        <section class="keno-how-section overflow-class" data-aos="fade-up" data-aos-duration="2000">
+
+            <!-- Geometric Shapes -->
+            <div class="triangle-shape"></div>
+            <div class="triangle-small"></div>
+
             <div class="container">
+                <!-- Heading -->
                 <h2 class="keno-how-heading">Hogyan működik a KENO?</h2>
                 <p class="keno-how-text">
                     A KENO könnyen megtanulható, mégis izgalmas játék. Válasszon számokat, tegye meg a tétet, majd várja
@@ -382,7 +442,26 @@
                 </div>
             </div>
         </section>
-        <section class="keno-tips-section ">
+
+
+
+
+
+
+
+        <section class="keno-tips-section overflow-class">
+            <!-- Decorative floating shapes -->
+            <div class="shape shape-1"></div>
+            <div class="shape shape-2"></div>
+            <div class="shape shape-3"></div>
+            <div class="shape shape-4"></div>
+            <div class="shape shape-5"></div>
+            <div class="shape shape-6"></div>
+            <div class="shape shape-7"></div>
+            <div class="shape shape-8"></div>
+            <div class="shape shape-9"></div>
+            <div class="shape shape-10"></div>
+
             <div class="container">
                 <!-- Heading -->
                 <h2 class="keno-tips-heading mb-4">Tippek az okosabb játékhoz</h2>
@@ -392,7 +471,7 @@
 
                 <div class="row g-4">
                     <!-- Tip 1 -->
-                    <div class="col-12 col-sm-6 col-md-6 col-lg-3">
+                    <div class="col-12 col-sm-6 col-md-6 col-lg-3 " data-aos="fade-right">
                         <div class="tip-card h-100">
                             <div class="tip-image">
                                 <img src="./assets/images/payout.jpg" alt="Esélyek" />
@@ -405,7 +484,7 @@
                     </div>
 
                     <!-- Tip 2 -->
-                    <div class="col-12 col-sm-6 col-md-6 col-lg-3">
+                    <div class="col-12 col-sm-6 col-md-6 col-lg-3 " data-aos="fade-right">
                         <div class="tip-card h-100">
                             <div class="tip-image">
                                 <img src="./assets/images/budget.jpg" alt="Költségkeret" />
@@ -418,7 +497,7 @@
                     </div>
 
                     <!-- Tip 3 -->
-                    <div class="col-12 col-sm-6 col-md-6 col-lg-3">
+                    <div class="col-12 col-sm-6 col-md-6 col-lg-3 " data-aos="fade-left">
                         <div class="tip-card h-100">
                             <div class="tip-image">
                                 <img src="./assets/images/play-fun.jpg" alt="Szórakozás" />
@@ -431,7 +510,7 @@
                     </div>
 
                     <!-- Tip 4 -->
-                    <div class="col-12 col-sm-6 col-md-6 col-lg-3">
+                    <div class="col-12 col-sm-6 col-md-6 col-lg-3 " data-aos="fade-left">
                         <div class="tip-card h-100">
                             <div class="tip-image">
                                 <img src="./assets/images/stay-informed.jpg" alt="Tájékozottság" />
@@ -446,9 +525,17 @@
             </div>
         </section>
 
+
+
         <section class="review-section overflow-class">
-            <!-- Játékos vélemények Section -->
+            <!-- Reviews container -->
             <div class="container reviews-section" data-aos="fade-up" data-aos-duration="3000">
+                <!-- Decorative floating shapes -->
+                <div class="shape shape-1"></div>
+                <div class="shape shape-2"></div>
+                <div class="shape shape-3"></div>
+                <div class="shape shape-4"></div>
+
                 <h2 class="reviews-heading">Játékos vélemények</h2>
 
                 <div id="reviewsCarousel" class="carousel slide" data-bs-ride="carousel">
@@ -477,6 +564,17 @@
                             </div>
                         </div>
 
+                        <!-- Review 3 (example extra review) -->
+                        <div class="carousel-item">
+                            <div class="review-card">
+                                <p>
+                                    „Nagyon tetszik a dizájn és a felhasználóbarát útmutatók. Könnyen követhető a játék
+                                    menete.”
+                                </p>
+                                <div class="review-author">– Péter, Szeged</div>
+                            </div>
+                        </div>
+
                     </div>
 
                     <!-- Controls -->
@@ -496,19 +594,39 @@
                         <button type="button" data-bs-target="#reviewsCarousel" data-bs-slide-to="0"
                             class="active"></button>
                         <button type="button" data-bs-target="#reviewsCarousel" data-bs-slide-to="1"></button>
+                        <button type="button" data-bs-target="#reviewsCarousel" data-bs-slide-to="2"></button>
                     </div>
                 </div>
             </div>
         </section>
+
+
+
+
+
+
+
+
+
+
+
+
         <section class="join-community-modern py-5 overflow-class">
             <!-- Background animation shape -->
             <div class="bg-shape"></div>
+
+            <!-- Geometric shapes -->
+            <div class="shape circle"></div>
+            <div class="shape triangle"></div>
+            <div class="shape hexagon"></div>
+            <div class="shape small-circle"></div>
+            <div class="shape small-triangle"></div>
 
             <div class="container">
                 <div class="row justify-content-center">
                     <div class="col-lg-8">
                         <div class="card text-center p-5 rounded-4 shadow-lg" data-aos="fade-up"
-                            data-aos-duration="3000">
+                            data-aos-duration="1000">
                             <h2 class="community-heading mb-3">Csatlakozzon a közösséghez</h2>
                             <p class="community-text mb-2">
                                 A Lucky Magyar nemcsak a játékokról szól — hanem egy biztonságos, tájékozott magyar
@@ -531,6 +649,7 @@
                 </div>
             </div>
         </section>
+
 
 
 
