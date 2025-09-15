@@ -852,4 +852,8 @@
         padding: 1rem 1.5rem;
        
     }
+    .keno-section .row {
+       
+        margin-bottom: 20px !IMPORTANT;
+    }
 }

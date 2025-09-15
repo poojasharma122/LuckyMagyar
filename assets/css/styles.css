@@ -2034,7 +2034,14 @@ header .container {
     z-index: 0;
     filter: blur(1px);
 }
-
+.keno-section .row{
+   
+        flex-direction: row-reverse!important;
+        border: 3px solid white;
+        padding: 20px 10px;
+        border-radius: 20px;
+    
+}
 .shape-1 {
     width: 200px;
     height: 200px;
