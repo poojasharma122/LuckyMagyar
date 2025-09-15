@@ -31,16 +31,19 @@
     .banner-content p {
         font-size: 16px;
     }
+
     .accordion-section>.container {
-       
+
         min-height: 470px;
-        
+
     }
+
     .keno-tips-section {
-      
+
         padding: 5rem 0 5rem;
-        
+
     }
+
     .review-section {
         padding: 50px 0 50px;
     }
@@ -108,16 +111,18 @@
     .fullscreen-banner {
         height: 430px;
     }
+
     .section-heading {
-      
+
         margin: 10px 0 1rem;
-       
+
     }
+
     .why-lucky-section {
         padding: 40px 0;
 
     }
-    
+
 
 
 }
@@ -146,9 +151,11 @@
     .fullscreen-banner {
         height: 400px;
     }
+
     .typing-text {
         font-size: 22px !important;
     }
+
     .banner-content p {
         font-size: 15px;
         letter-spacing: 0;
@@ -286,30 +293,39 @@
     .role-accent {
         width: 48px;
     }
+
     .section-heading {
         margin: 10px 0 1rem;
         font-size: 22px;
     }
+
     .why-lucky-heading {
-      
+
         font-size: 24px;
-      
+
     }
+
     .join-community-modern .community-heading {
         color: #fff;
         font-weight: 600;
         font-size: 24px;
     }
+
     .disclaimer_txt h3 {
         font-size: 24px;
-       
+
     }
+
     .follow_heading {
         font-size: 22px;
     }
+
     .banner-content {
-      
+
         padding-top: 50px;
+    }
+    .footer-pages-wrap p {
+        text-align: left;
     }
 
 }
@@ -510,16 +526,28 @@
     .innerpage-title {
         font-size: 24px;
     }
+
     .keno-tips-heading {
         font-size: 22px;
     }
+
     .join-community-modern .community-heading {
         color: #fff;
         font-weight: 600;
         font-size: 22px;
     }
+
     .accordion-section>.container {
         min-height: 450px;
+    }
+
+   
+
+    .footer-pages-content-grp h3 {
+        font-size: 1.3rem;
+    }
+    .footer-pages-wrap {
+        padding: 1.875rem  0.9375rem;
     }
 
 }
@@ -634,5 +662,15 @@
 
     .keno-section {
         padding-top: 30px;
+    }
+    .footer-pages-content-grp h3 {
+        font-size: 1.2rem;
+    }
+    .footer-pages-content-grp p {
+        font-size: 1rem;
+    }
+   
+    .footer-pages-content-grp strong {
+        font-size: 1rem;
     }
 }
