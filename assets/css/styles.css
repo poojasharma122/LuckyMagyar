@@ -53,7 +53,7 @@ ul {
 
 body {
     margin: 0;
-    background-color: #030f26;
+    background-color: #1f0644;
 }
 
 .container {
@@ -165,7 +165,7 @@ header .container {
 }
 
 .sticky-header.fixed_header {
-    background-color: #031B46;
+    background-color: #54068f;
     color: white;
 }
 
@@ -405,24 +405,17 @@ header .container {
 
 /* Card Variants */
 .keno-card.card-purple {
-    background: #5a2ca0;
+    background: #26253f;
     /* purple for 1st & 3rd */
 }
 
-.keno-card.card-purple:hover {
-    background: #6d35c7;
-    /* lighter purple on hover */
-}
+
 
 .keno-card.card-blue {
-    background: #2368d9;
-    /* blue for 2nd card */
+    background: #26253f;
 }
 
-.keno-card.card-blue:hover {
-    background: #317af0;
-    /* lighter blue on hover */
-}
+
 
 /* Card Header (Date + Draw ID) */
 .keno-date {
@@ -493,7 +486,7 @@ header .container {
 
 /* Section Subtext */
 .section-table-para {
-    color: #00ff99;
+    color: #fa009f;
 }
 
 
@@ -515,16 +508,14 @@ header .container {
 /* Section background (gradient from image) */
 .accordion-section {
     position: relative;
-    /* needed for shapes */
-    background: linear-gradient(to bottom, #3a0d5d, #e13a79);
+    background: #54068f3d;
     overflow: hidden;
-    /* hide overflow of shapes */
 }
 
 .accordion-section>.container {
     padding-top: 25px !important;
-    min-height: 510px;
-    padding-bottom: 0 !important;
+    /* min-height: 510px; */
+    padding-bottom: 20px !important;
 }
 
 /* Section heading */
@@ -537,16 +528,14 @@ header .container {
 
 /* Accordion button default (collapsed) */
 .accordion-button {
-    background: #3a0d5d;
-    /* dark purple */
+    background: #54068f;
     color: #fff !important;
     font-weight: 600;
 }
 
 /* Accordion button active (expanded) */
 .accordion-button:not(.collapsed) {
-    background: #e13a79;
-    /* pink tone */
+    background: #54068f;
     color: #fff !important;
 }
 
@@ -571,26 +560,26 @@ header .container {
 }
 
 /* === Decorative Geometric Shapes === */
-.accordion-section::before,
+/* .accordion-section::before,
 .accordion-section::after {
     content: "";
     position: absolute;
     border-radius: 50%;
     opacity: 0.15;
     z-index: 0;
-}
+} */
 
 /* Large circle (left top) */
-.accordion-section::before {
+/* .accordion-section::before {
     width: 200px;
     height: 200px;
     background: #fff;
     top: 40px;
     left: -80px;
-}
+} */
 
 /* Large rectangle (right bottom) */
-.accordion-section::after {
+/* .accordion-section::after {
     width: 300px;
     height: 120px;
     background: #000;
@@ -598,18 +587,18 @@ header .container {
     right: -100px;
     border-radius: 20px;
     opacity: 0.1;
-}
+} */
 
 /* Extra shapes */
-.accordion-section .shape-square,
+/* .accordion-section .shape-square,
 .accordion-section .shape-circle {
     position: absolute;
     opacity: 0.15;
     z-index: 0;
-}
+} */
 
 /* Small tilted square */
-.accordion-section .shape-square {
+/* .accordion-section .shape-square {
     width: 100px;
     height: 100px;
     background: #fff;
@@ -617,17 +606,17 @@ header .container {
     right: 50px;
     transform: rotate(25deg);
     border-radius: 8px;
-}
+} */
 
 /* Medium circle */
-.accordion-section .shape-circle {
+/* .accordion-section .shape-circle {
     width: 120px;
     height: 120px;
     border-radius: 50%;
     background: #000;
     left: 30%;
     bottom: 80px;
-}
+} */
 
 
 
@@ -662,11 +651,32 @@ header .container {
     position: relative;
     padding: 60px 0;
     overflow: hidden;
-    background: linear-gradient(135deg, #2a0a4d, #0a0033);
+    /* background: linear-gradient(135deg, #2a0a4d, #0a0033); */
+    background-image: url('../images/card-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+
+/* Overlay */
+.why-lucky-section::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.7);
+    /* adjust opacity */
+    z-index: 1;
+}
+
+/* Keep your content above overlay */
+.why-lucky-section .container {
+    position: relative;
+    z-index: 2;
 }
 
 /* Diagonal stripes effect */
-.why-lucky-section::before {
+/* .why-lucky-section::before {
     content: "";
     position: absolute;
     top: 0;
@@ -678,10 +688,10 @@ header .container {
         linear-gradient(135deg, transparent 75%, rgba(255, 255, 255, 0.03) 75%);
     background-size: 80px 80px;
     z-index: 0;
-}
+} */
 
 /* Starry particle dots */
-.why-lucky-section::after {
+/* .why-lucky-section::after {
     content: "";
     position: absolute;
     top: 0;
@@ -692,10 +702,10 @@ header .container {
     background-size: 50px 50px;
     animation: moveParticles 40s linear infinite;
     z-index: 0;
-}
+} */
 
 /* Particle slow drift animation */
-@keyframes moveParticles {
+/* @keyframes moveParticles {
     from {
         transform: translate(0, 0);
     }
@@ -703,7 +713,7 @@ header .container {
     to {
         transform: translate(-200px, -200px);
     }
-}
+} */
 
 /* Heading */
 .why-lucky-heading {
@@ -719,7 +729,7 @@ header .container {
 
 /* Cards */
 .why-lucky-card {
-    background: linear-gradient(to bottom, #5a34f2, #c176d6);
+    background-color: transparent;
     border-radius: 15px;
     padding: 1.5rem;
     text-align: center;
@@ -731,14 +741,15 @@ header .container {
     color: #fff;
     position: relative;
     z-index: 1;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+    box-shadow: inset 0px 0px 12px 7px #9a13d2;
+    backdrop-filter: blur(5px);
 }
 
 /* Card hover effect */
 .why-lucky-card:hover {
     transform: translateY(-8px);
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.6);
-    background: linear-gradient(to bottom, #6b4df8, #d18ae0);
+    box-shadow: inset 0px 0px 12px 7px #fea036;
+    /* background: linear-gradient(to bottom, #6b4df8, #d18ae0); */
 }
 
 /* Card image */
@@ -809,11 +820,10 @@ header .container {
 .keno-how-section {
     position: relative;
     padding: 80px 0;
-    background: linear-gradient(135deg, #6a5af9, #3e8ef7);
+    background: #1f0644;
     border-radius: 25px;
     color: #fff;
     overflow: hidden;
-    /* keep shapes inside */
 }
 
 /* ==========================
@@ -907,7 +917,7 @@ header .container {
 =========================== */
 .keno-feature-card {
     position: relative;
-    background: rgba(255, 255, 255, 0.1);
+    background: #26253f;
     border-radius: 20px;
     padding: 2rem 1.5rem;
     text-align: center;
@@ -917,12 +927,18 @@ header .container {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     color: #fff;
     z-index: 1;
+
+    /* Shadow */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
 }
 
+/* Hover effect (optional) */
 .keno-feature-card:hover {
-    transform: translateY(-6px);
-    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.25);
+    transform: translateY(-8px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.7);
 }
+
+
 
 /* Feature Icons */
 .keno-feature-icon {
@@ -998,7 +1014,7 @@ header .container {
     text-align: center;
     color: #fff;
     padding: 5rem 0 10rem;
-    background: linear-gradient(180deg, #2c0052 0%, #8a0f6f 50%, #e31d75 100%);
+    background: #54068f3d;
     overflow: hidden;
 }
 
@@ -1125,14 +1141,14 @@ header .container {
 
 .keno-tips-subtext {
     font-size: 1.1rem;
-    color: #00ff99;
+    color: #fa009f;
     max-width: 700px;
     margin: 0 auto 3rem auto;
 }
 
 /* === TIP CARD === */
 .tip-card {
-    background: #fff;
+    background: transparent;
     border-radius: 20px;
     padding: 2rem 1.5rem 1rem;
     transition: all 0.4s ease;
@@ -1140,11 +1156,14 @@ header .container {
     display: flex;
     flex-direction: column;
     align-items: center;
+    box-shadow: inset 0px 0px 12px 7px #fea036;
+    backdrop-filter: blur(5px);
 }
 
 .tip-card:hover {
     transform: translateY(-10px) scale(1.05);
     box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+    box-shadow: inset 0px 0px 12px 7px #9a13d2;
 }
 
 /* === TIP IMAGE === */
@@ -1175,14 +1194,14 @@ header .container {
 .tip-title {
     font-size: 1.3rem;
     font-weight: 600;
-    color: #0b2e66;
+    color: #fa009f;
     margin-bottom: 0.5rem;
     text-align: center;
 }
 
 .tip-text {
     font-size: 0.95rem;
-    color: #555;
+    color: #fff;
     text-align: center;
 }
 
@@ -1211,85 +1230,20 @@ header .container {
 
 /* Reviews container with gradient */
 .reviews-section {
-    background: linear-gradient(to bottom, #3a0d5d, #e13a79);
     padding: 60px 0;
     border-radius: 20px;
     position: relative;
     overflow: hidden;
+
+    background:
+        rgba(0, 0, 0, 0.5) url('../images/review-bg.jpg');
+    /* overlay + image */
+    background-blend-mode: overlay;
+    /* blends them */
+    background-size: cover;
+    background-position: center;
 }
 
-/* Decorative ribbon-like shapes */
-.reviews-section::before,
-.reviews-section::after {
-    content: "";
-    position: absolute;
-    border-radius: 50%;
-    z-index: 0;
-    opacity: 0.15;
-}
-
-.reviews-section::before {
-    width: 300px;
-    height: 300px;
-    background: rgba(255, 255, 255, 0.1);
-    top: -50px;
-    left: -50px;
-    transform: rotate(45deg);
-}
-
-.reviews-section::after {
-    width: 250px;
-    height: 250px;
-    background: rgba(255, 255, 255, 0.08);
-    bottom: -50px;
-    right: -30px;
-    transform: rotate(-30deg);
-}
-
-/* Floating circle shapes */
-.reviews-section .shape {
-    position: absolute;
-    width: 60px;
-    height: 60px;
-    border-radius: 50%;
-    background: rgba(255, 255, 255, 0.1);
-    z-index: 0;
-    animation: float 7s ease-in-out infinite;
-}
-
-.shape-1 {
-    top: 10%;
-    left: 20%;
-}
-
-.shape-2 {
-    top: 40%;
-    right: 15%;
-}
-
-.shape-3 {
-    bottom: 20%;
-    left: 30%;
-}
-
-.shape-4 {
-    bottom: 25%;
-    right: 25%;
-}
-
-@keyframes float {
-    0% {
-        transform: translateY(0) rotate(0deg);
-    }
-
-    50% {
-        transform: translateY(-10px) rotate(20deg);
-    }
-
-    100% {
-        transform: translateY(0) rotate(0deg);
-    }
-}
 
 /* Heading */
 .reviews-heading {
@@ -1338,19 +1292,45 @@ header .container {
 
 .review-author {
     font-weight: bold;
-    color: #ffe066;
+    color: #fea036;
 }
 
-/* Carousel controls */
-.reviews-section .carousel-control-prev-icon,
-.reviews-section .carousel-control-next-icon {
-    filter: invert(1);
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-size: 100% 100%;
+    width: 2.5rem;
+    height: 2.5rem;
 }
+
+/* Clean white LEFT arrow */
+.carousel-control-prev-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='white' viewBox='0 0 16 16'%3E%3Cpath fill-rule='evenodd' d='M11.354 1.646a.5.5 0 010 .708L5.707 8l5.647 5.646a.5.5 0 01-.708.708l-6-6a.5.5 0 010-.708l6-6a.5.5 0 01.708 0z'/%3E%3C/svg%3E");
+}
+
+/* Clean white RIGHT arrow */
+.carousel-control-next-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='white' viewBox='0 0 16 16'%3E%3Cpath fill-rule='evenodd' d='M4.646 1.646a.5.5 0 000 .708L10.293 8l-5.647 5.646a.5.5 0 00.708.708l6-6a.5.5 0 000-.708l-6-6a.5.5 0 00-.708 0z'/%3E%3C/svg%3E");
+}
+
+
+
+
 
 /* Carousel indicators */
 .reviews-section .carousel-indicators [data-bs-target] {
     background-color: #ff99cc;
 }
+/* === Review Section SVG Styles === */
+.review-card svg {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 1.5rem;
+    fill: #ffffff;   /* always white */
+    opacity: 0.9;
+}
+
+/* Optional hover: only scale, keep white */
+
 
 
 
@@ -1376,7 +1356,7 @@ header .container {
 
 
 .join-community-modern {
-    background: linear-gradient(135deg, #6a5af9, #3e8ef7);
+    background: #54068f3d;
     position: relative;
     overflow: hidden;
     border-radius: 40px 40px 0 0;
@@ -1494,12 +1474,13 @@ header .container {
 .join-community-modern .card {
     position: relative;
     z-index: 1;
-    background: rgba(255, 255, 255, 0.05);
+    background: #26253f;
     color: #fff;
-    border: none;
+    border: 0.1px solid #ffffff2b;
     border-radius: 20px;
     backdrop-filter: blur(15px);
     transition: transform 0.3s, box-shadow 0.3s;
+    /* box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5); */
 }
 
 .join-community-modern .card:hover {
@@ -1537,14 +1518,15 @@ header .container {
     border-radius: 50px;
     padding: 0.75rem 2rem;
     font-weight: bold;
-    background: linear-gradient(135deg, #ff6ec7, #ff8f70);
+    background: #fa009f;
     color: #fff;
     border: none;
     transition: all 0.3s;
 }
 
 .join-community-modern .btn-warning:hover {
-    background: linear-gradient(135deg, #ff8f70, #ff6ec7);
+    background: white;
+    color: black;
     transform: scale(1.05);
 }
 
@@ -1597,7 +1579,7 @@ header .container {
     background-size: cover;
     background-repeat: no-repeat;
     box-shadow: #00ffcc 0px 3px 15px;
-    background-color: #101a2e;
+    background-color: #1f0644;
 }
 
 .footer_logo {
@@ -1651,7 +1633,7 @@ header .container {
 }
 
 .footer-links a:hover {
-    color: #00ffcc;
+    color: #fa009f;
 }
 
 .footer a i {
@@ -1730,8 +1712,7 @@ header .container {
 }
 
 .social-links a {
-    background: linear-gradient(135deg, #ff6ec7, #ff8f70);
-    /* ✅ fixed */
+    background: #fa009f;
     color: #fff;
     margin: 0 5px;
     width: 2.5rem;
@@ -1743,12 +1724,24 @@ header .container {
     transition: 0.4s all ease-in-out;
     padding: 5px;
 }
+.social-links svg {
+    
+    fill: #ffffff;   /* make icons white */
+    
+    opacity: 0.9;
+}
 
 
 .social-links a:hover {
     transform: translateY(-3px);
+    background: white;
 }
-
+.social-links svg:hover {
+    
+    fill: #000;   /* make icons white */
+    
+    
+}
 .social-links a i {
     font-size: 1.25rem;
     padding-right: 0.4375rem;
@@ -1769,18 +1762,12 @@ header .container {
     font-size: 1.7rem;
     font-weight: 600;
     margin-bottom: 15px;
-    background: linear-gradient(135deg, #ff6ec7, #ff8f70);
-    /* gradient applied */
+    background: #fa009f;
     -webkit-background-clip: text;
-    /* for Safari/Chrome */
     -webkit-text-fill-color: transparent;
-    /* make the text show gradient */
     background-clip: text;
-    /* standard */
     color: transparent;
-    /* fallback */
 }
-
 
 .overflow-class {
     overflow: hidden;
@@ -1913,14 +1900,13 @@ header .container {
 /* General KENO Section Styling */
 .keno-section {
     position: relative;
-    background: linear-gradient(to bottom, #2e0057 0%, #a70063 50%, #ff2381 100%);
+    background: #54068f3d;
     color: #fff;
     padding: 80px 0;
     overflow: hidden;
     z-index: 1;
-    border-radius: 0 0 40px 40px;
+    /* border-radius: 0 0 40px 40px; */
 }
-
 /* Geometric Shapes */
 .keno-shape {
     position: absolute;
@@ -2137,7 +2123,7 @@ header .container {
     font-weight: 700;
     margin: 0;
     letter-spacing: 0.2px;
-    background: linear-gradient(90deg, #ff6b6b, #f06595, #845ef7);
+    background: #fa009f;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -2147,7 +2133,7 @@ header .container {
     height: 6px;
     width: 56px;
     border-radius: 6px;
-    background: linear-gradient(90deg, #ff6b6b, #f06595, #845ef7);
+    background: #fa009f;
     box-shadow: 0 6px 20px rgba(132, 94, 247, 0.18);
 }
 
@@ -2195,8 +2181,7 @@ header .container {
     color: #fff;
     padding: 100px 0 80px;
     overflow: hidden;
-    /* keep the gradient background */
-    background: linear-gradient(135deg, #2a0a4d, #0a0033);
+    background: #54068f3d;
 }
 
 /* Background shapes container */
@@ -2267,17 +2252,12 @@ header .container {
 .role-card {
     position: relative;
     z-index: 1;
-    background: linear-gradient(135deg, #6a8de8, #7f7bf2);
+    background: #26253f;
     border-radius: 24px;
-    /* bigger rounding like in image */
     box-shadow: 0 10px 30px rgba(127, 123, 242, 0.5);
-    /* subtle purple shadow */
     border: none;
-    /* remove old border */
     padding: 2.5rem 3rem;
-    /* adjust padding if needed */
     color: white;
-    /* text color for contrast */
     transform: translateY(12px);
     opacity: 0;
     transition: transform 600ms cubic-bezier(.16, .84, .24, 1), opacity 600ms ease;
@@ -2340,7 +2320,10 @@ header .container {
     /* font-size: 20px; */
 }
 
-
+.lizard-section .accordion-button {
+   
+    font-size: 20px;
+}
 
 
 
@@ -2367,12 +2350,12 @@ header .container {
 
 /* === Contact Section === */
 .contact-section {
-    background: linear-gradient(135deg, #6A11CB, #2575FC);
+    background: #1f0644;
     color: #fff;
     padding: 100px 0;
     position: relative;
     /* z-index: 1; */
-    margin-top: -40px;
+    /* margin-top: -40px; */
 }
 
 /* === Contact Card === */
@@ -2404,7 +2387,7 @@ header .container {
 }
 
 .contact-link {
-    color: #ffe082;
+    color: #fa009f;
     text-decoration: none;
     transition: color 0.3s ease;
 }
@@ -2598,7 +2581,7 @@ header .container {
 .lizard-section {
     padding: 90px 0;
     min-height: 710px;
-    border-radius: 40px 40px 0 0;
+    /* border-radius: 40px 40px 0 0; */
 }
 
 
@@ -2660,9 +2643,10 @@ header .container {
     padding: 1.875rem;
     margin-top: -5rem;
     /* background-color: #000; */
-    background: linear-gradient(135deg, #6a5af9, #3e8ef7);
+    background: #26253f;
     /* position: relative; */
     /* overflow: hidden; */
+    border: 1px solid white;
 }
 
 .footer-pages-content-grp {
@@ -2707,7 +2691,7 @@ header .container {
 }
 
 .footer-pages-content-grp p a {
-    color: #00ff99;
+    color: #fa009f;
     display: inline;
     transition: 0.4s all ease-in-out;
     text-underline-offset: 4px;
@@ -2742,5 +2726,5 @@ header .container {
 .mr-list {
     margin-left: 1.25rem;
 }
-   
+
 /* Footer Pages CSS End*/
