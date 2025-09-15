@@ -379,15 +379,19 @@ header .container {
 
 
 
-
-
-
 /* Section Heading */
 .section-heading {
     text-align: center;
     margin: 2rem 0 1rem;
     font-weight: bold;
     color: #fff;
+}
+
+/* Section Subtext */
+.section-table-para {
+    color: #fa009f;
+    text-align: center;
+    margin-bottom: 2rem;
 }
 
 /* Base Card Style */
@@ -406,16 +410,11 @@ header .container {
 /* Card Variants */
 .keno-card.card-purple {
     background: #26253f;
-    /* purple for 1st & 3rd */
 }
-
-
 
 .keno-card.card-blue {
     background: #26253f;
 }
-
-
 
 /* Card Header (Date + Draw ID) */
 .keno-date {
@@ -431,7 +430,7 @@ header .container {
     color: #d0d0d0;
 }
 
-/* Lottery Numbers */
+/* Lottery Numbers in Cards */
 .keno-numbers {
     display: flex;
     flex-wrap: wrap;
@@ -476,18 +475,85 @@ header .container {
     text-shadow: 0 0 6px rgba(255, 77, 77, 0.7);
 }
 
-/* Footer Note */
-.footer-note {
+
+
+/* Table Styles (Purple Theme) */
+.table-purple th, 
+.table-purple td {
+    vertical-align: middle;
     text-align: center;
-    margin-top: 2rem;
-    font-size: 0.85rem;
-    color: #aaa;
+    font-weight: 500;
+    font-size: 0.95rem;
+    color: #fff;
 }
 
-/* Section Subtext */
-.section-table-para {
-    color: #fa009f;
+/* Table Header */
+.table-purple thead th {
+    background-color: #54068f;
+    border-bottom: 2px solid rgba(255,255,255,0.2);
 }
+
+/* Table Body Rows */
+.table-purple tbody tr {
+    background-color: #1f0644 !important;
+    margin-bottom: 6px;
+    border-radius: 10px;
+}
+
+.table-purple tbody tr:nth-child(even) {
+    background-color: #5e0bb0;
+}
+
+/* Winner / Loser Text */
+.table-purple td.text-success {
+    color: #00ff99 !important;
+    text-shadow: 0 0 6px rgba(0, 255, 153, 0.7);
+}
+
+.table-purple td.text-danger {
+    color: #ff4d4d !important;
+    text-shadow: 0 0 6px rgba(255, 77, 77, 0.7);
+}
+
+/* Lottery Numbers in Table as Card Bubbles */
+.table-purple td:nth-child(2) span {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    margin: 3px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.25);
+    color: #fff;
+    font-weight: bold;
+    font-size: 0.95rem;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+    transition: transform 0.2s ease, background 0.2s ease;
+}
+
+.table-purple td:nth-child(2) span:hover {
+    background: rgba(255, 255, 255, 0.4);
+    transform: scale(1.1);
+    cursor: default;
+}
+
+/* Table Responsive Scroll */
+.table-responsive {
+    overflow-x: auto;
+}
+
+/* Mobile Card Headers */
+.mobile-card-header {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    align-items: center;
+}
+.table > :not(caption) > * > * {
+    background-color: transparent;
+}
+
 
 
 
@@ -1320,12 +1386,14 @@ header .container {
 .reviews-section .carousel-indicators [data-bs-target] {
     background-color: #ff99cc;
 }
+
 /* === Review Section SVG Styles === */
 .review-card svg {
     width: 60px;
     height: 60px;
     margin-bottom: 1.5rem;
-    fill: #ffffff;   /* always white */
+    fill: #ffffff;
+    /* always white */
     opacity: 0.9;
 }
 
@@ -1724,10 +1792,12 @@ header .container {
     transition: 0.4s all ease-in-out;
     padding: 5px;
 }
+
 .social-links svg {
-    
-    fill: #ffffff;   /* make icons white */
-    
+
+    fill: #ffffff;
+    /* make icons white */
+
     opacity: 0.9;
 }
 
@@ -1736,12 +1806,15 @@ header .container {
     transform: translateY(-3px);
     background: white;
 }
+
 .social-links svg:hover {
-    
-    fill: #000;   /* make icons white */
-    
-    
+
+    fill: #000;
+    /* make icons white */
+
+
 }
+
 .social-links a i {
     font-size: 1.25rem;
     padding-right: 0.4375rem;
@@ -1907,6 +1980,7 @@ header .container {
     z-index: 1;
     /* border-radius: 0 0 40px 40px; */
 }
+
 /* Geometric Shapes */
 .keno-shape {
     position: absolute;
@@ -2321,7 +2395,7 @@ header .container {
 }
 
 .lizard-section .accordion-button {
-   
+
     font-size: 20px;
 }
 
