@@ -21,7 +21,8 @@
 
 @media screen and (max-width: 1024px) {
     .fullscreen-banner {
-        height: 490px;
+        height: auto;
+        min-height: 480px;
     }
 
     .typing-text {
@@ -749,7 +750,8 @@
     }
 
     .fullscreen-banner {
-        height: 370px;
+        height: auto;
+        min-height: 400px;
     }
 
     .banner-content {
