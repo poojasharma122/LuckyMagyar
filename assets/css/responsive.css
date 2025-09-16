@@ -45,33 +45,41 @@
     .review-section {
         padding: 50px 0 50px;
     }
+
     .section-heading {
-        
+
         margin: 10px 0 1rem;
-        
+
     }
+
     .keno-section {
-       
+
         padding: 50px 0;
-        
+
     }
+
     .keno-how-section {
-       
+
         padding: 50px 0;
-        
+
     }
+
     .contact-section {
         padding: 50px 0;
     }
+
     .keno-section {
         padding: 30px 0;
     }
+
     .temp-font-size {
         font-size: 22px !important;
     }
+
     .lizard-section .accordion-button {
         font-size: 18px;
     }
+
     .lizard-section {
         padding: 40px 0;
         /* min-height: 710px; */
@@ -152,11 +160,13 @@
         padding: 40px 0;
 
     }
+
     .keno-how-section {
-       
+
         padding: 50px 0;
-       
+
     }
+
     .keno-row-class {
         padding-bottom: 20px;
     }
@@ -361,32 +371,41 @@
 
         padding-top: 50px;
     }
+
     .footer-pages-wrap p {
         text-align: left;
     }
+
     .nem {
         padding-top: 40px;
     }
-    .keno-tips-subtext{
+
+    .keno-tips-subtext {
         margin-bottom: 10px !important;
     }
+
     .keno-how-text {
         margin-bottom: 40px;
     }
+
     .Ahogy {
         padding-bottom: 40px;
     }
+
     .role-section {
-        
+
         padding: 60px 0 60px;
-        
+
     }
+
     .lizard-section .accordion-button {
         font-size: 16px;
     }
+
     .temp-font-size {
         font-size: 20px !important;
     }
+
     .keno-section {
         padding-top: 30px;
     }
@@ -603,80 +622,108 @@
         /* min-height: 450px; */
     }
 
-   
+
 
     .footer-pages-content-grp h3 {
         font-size: 1.3rem;
     }
+
     .footer-pages-wrap {
-        padding: 1.875rem  0.9375rem;
+        padding: 1.875rem 0.9375rem;
     }
+
     .keno-how-section {
         padding: 40px 0;
     }
+
     .keno-tips-section {
         padding: 40px 0;
     }
-    .carousel-control-next, .carousel-control-prev {
+
+    .carousel-control-next,
+    .carousel-control-prev {
         top: 230px;
     }
+
     .carousel-control-next {
         right: 30%;
     }
+
     .carousel-control-prev {
         left: 30%;
     }
-    .carousel-control-prev-icon, .carousel-control-next-icon {
-      
+
+    .carousel-control-prev-icon,
+    .carousel-control-next-icon {
+
         width: 2rem;
         height: 2.5rem;
     }
+
     .keno-tips-section {
         padding: 30px 0;
     }
+
     .nem {
         padding-top: 30px;
     }
+
     .keno-tips-subtext {
         margin-bottom: 0px !important;
     }
+
     .keno-how-text {
         margin-bottom: 30px;
     }
+
     .Ahogy {
         padding-bottom: 30px;
     }
+
     .why-lucky-heading {
-      
+
         margin-bottom: 1rem;
-        
-       
+
+
     }
+
     .keno-section {
         padding: 30px 0;
     }
+
     .contact-heading {
         font-size: 22px;
         margin-bottom: 10px !important;
     }
+
     .contact-item {
         font-size: 18px;
     }
+
     .contact-section {
         padding: 30px 0;
     }
+
     .temp-font-size {
         font-size: 18px !important;
     }
+
     .lizard-section {
         padding: 20px 0;
         /* min-height: 710px; */
         /* border-radius: 40px 40px 0 0; */
     }
+
     .review-card {
-       
+
         padding: 2rem;
-       min-height: 285px;
+        min-height: 285px;
+    }
+
+    .footer-pages-wrap {
+      
+        margin-top: -2rem;
+       
     }
 }
 
@@ -791,89 +838,115 @@
     .keno-section {
         padding-top: 30px;
     }
+
     .footer-pages-content-grp h3 {
         font-size: 1.2rem;
     }
+
     .footer-pages-content-grp p {
         font-size: 1rem;
     }
-   
+
     .footer-pages-content-grp strong {
         font-size: 1rem;
     }
-    .carousel-control-next, .carousel-control-prev {
+
+    .carousel-control-next,
+    .carousel-control-prev {
         top: 297px;
     }
+
     .carousel-control-next {
         right: 25%;
     }
+
     .carousel-control-prev {
         left: 25%;
     }
-    .carousel-control-prev-icon, .carousel-control-next-icon {
+
+    .carousel-control-prev-icon,
+    .carousel-control-next-icon {
         background-size: 100% 100%;
         width: 1.5rem;
         height: 2.5rem;
     }
+
     .keno-section {
         padding: 30px 0 20px;
     }
-    .keno-tips-subtext{
+
+    .keno-tips-subtext {
         margin-bottom: 20px !important;
     }
+
     .keno-how-text {
         margin-bottom: 20px;
     }
+
     .Ahogy {
         padding-bottom: 30px;
     }
+
     .keno-tips-heading {
         font-size: 18px;
         margin-bottom: 10px !important;
     }
+
     .keno-how-heading {
         font-size: 21px;
         margin-bottom: 10px;
     }
+
     .role-section {
         padding: 40px 0 40px;
     }
+
     .keno-tips-subtext {
         margin-bottom: 0px !important;
         margin-top: 30px !important;
     }
+
     .keno-how-section {
         padding: 30px 0;
     }
+
     .lizard-section .accordion-button {
         font-size: 15px;
     }
+
     .reviews-section {
-      
+
         padding: 30px 0;
     }
+
     .keno-feature-card {
-       
+
         padding: 1rem 1.5rem;
-       
+
     }
+
     .keno-section .row {
-       
+
         margin-bottom: 20px !IMPORTANT;
     }
+
     .review-card {
         padding: 1rem;
         min-height: 280px;
     }
-    .carousel-control-next, .carousel-control-prev {
+
+    .carousel-control-next,
+    .carousel-control-prev {
         top: 225px;
     }
+
     .typing-text {
-       
+
         padding-top: 0px;
     }
+
     .section-table-para {
-       
+
         margin-bottom: 0px !important;
     }
 }
