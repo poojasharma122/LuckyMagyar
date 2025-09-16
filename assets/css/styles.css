@@ -3213,10 +3213,9 @@ button {
 
 
 
-
 .table-purple tbody tr td {
-
     border: none;
+    justify-content: center;
 }
 
 .text_theme{
