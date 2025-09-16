@@ -3221,6 +3221,9 @@ button {
 .text_theme{
     color: #fa009f !important;
 }
+.text_theme:hover{
+    color: white !important;
+}
 
 .twitter-img{
     width: 100%;
