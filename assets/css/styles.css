@@ -2951,6 +2951,7 @@ button {
     margin-bottom: 20px;
     margin-top: 10px;
 }
+
 .contact-section {
     background-image: url('../images/contact-sec-bg.jpg');
     background-size: cover;
@@ -2969,6 +2970,236 @@ button {
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.7); /* Black overlay, 50% opacity */
-    z-index: -1; /* Keep it behind content */
+    background: rgba(0, 0, 0, 0.7);
+    /* Black overlay, 50% opacity */
+    z-index: -1;
+    /* Keep it behind content */
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.header-actions {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.butn {
+    position: relative;
+    z-index: 2;
+    vertical-align: middle;
+    display: inline-flex;
+    text-align: center;
+    background-color: #fa009f;
+    color: white;
+    font-size: 1.1rem;
+    font-weight: 600;
+    text-transform: capitalize;
+    line-height: 1;
+    justify-content: center;
+    align-items: center;
+    border-width: initial;
+    border-style: none;
+    border-color: initial;
+    border-image: initial;
+    padding: 15px 25px;
+    overflow: hidden;
+    border-radius: 4.875rem;
+    margin-left: 10px;
+}
+
+.header_inner .butn {
+    cursor: pointer;
+}
+
+.butn:hover {
+    color: rgb(255, 255, 255);
+    box-shadow: none;
+}
+
+.butn::after,
+.butn::before {
+    content: "";
+    display: block;
+    width: 3.125rem;
+    height: 3.125rem;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    z-index: -1;
+    background-color: rgb(0, 0, 0);
+    border-radius: 50%;
+    transition: 0.5s;
+}
+
+.butn:hover::after,
+.butn:hover::before {
+    height: 35.625rem;
+    width: 35.625rem;
+}
+
+.butn::before {
+    top: -2em;
+    left: -2em;
+}
+
+.butn::after {
+    left: calc(100% + 4em);
+    top: calc(100% + 4em);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Modal CSS Start */
+/* Make sure modals always appear above the toggle menu */
+.modal-backdrop {
+    z-index: 20000 !important;
+}
+
+.modal {
+    z-index: 20001 !important;
+}
+
+.modal-content {
+    background: #13012e;
+    padding: 1.25rem;
+    border: 3px solid #fa009f;
+    border-radius: 1.875rem 0;
+    position: relative;
+}
+
+.modal-content .modal-title {
+    color: #fa009f;
+    font-size: 2rem !important;
+    font-weight: 600;
+}
+
+.modal-content .btn-close {
+    filter: invert(1);
+    opacity: 1;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 20px;
+}
+
+.modal-content .modal-header {
+    border-bottom: 3px solid #fa009f !important;
+    padding: 1.25rem 0;
+    justify-content: center;
+    /* border-top: 3px solid #fa009f; */
+    border-radius: 0;
+}
+
+.modal-content form.newsletter-wrap {
+    padding: 1.25rem 0;
+    border-radius: 1.875rem 0;
+}
+
+.modal-content .newsletter-wrap input {
+    width: 100%;
+    background: transparent;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid #fff;
+    padding: 0.6235rem;
+    color: #fff;
+}
+
+.modal-content .newsletter-wrap input:focus::placeholder {
+    color: #fa009f;
+}
+
+.modal-content .newsletter-wrap input:focus {
+    border-color: #fa009f;
+}
+
+.modal_logo_outer {
+    height: 5rem;
+    width: 100%;
+    margin-bottom: 1.25rem;
+}
+
+.modal_logo {
+    height: 100%;
+    width: 100%;
+}
+
+.modal-body {
+    padding: 1.25rem 0;
+}
+
+.modal_logo {
+    width: 150px;
+    /* adjust as needed */
+    height: 80px;
+    /* adjust as needed */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    /* keep aspect ratio */
+    display: block;
+    margin: 0 auto;
+}
+
+
+/* Modal CSS End */

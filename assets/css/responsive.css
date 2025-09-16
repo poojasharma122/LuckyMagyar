@@ -170,7 +170,20 @@
     .keno-row-class {
         padding-bottom: 20px;
     }
-
+    .header-actions {
+       
+        gap: 20px;
+        justify-content: center;
+        flex-direction: column;
+        margin-top: 10px;
+    }
+    header .butn {
+       
+        font-size: 16px;
+        
+        padding: 13px 25px;
+        
+    }
 
 
 }
@@ -724,6 +737,9 @@
       
         margin-top: -2rem;
        
+    }
+    .modal-content .modal-title {
+        font-size: 1.6rem !important;
     }
 }
 
