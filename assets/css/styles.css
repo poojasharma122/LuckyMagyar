@@ -506,6 +506,7 @@ button {
     background-color: #1f0644 !important;
     margin-bottom: 6px;
     border-radius: 10px;
+    border-bottom: 1px solid #ffffff;
 }
 
 .table-purple tbody tr:nth-child(even) {
@@ -1846,15 +1847,14 @@ button {
     align-items: center;
     justify-content: center;
     transition: 0.4s all ease-in-out;
-    padding: 5px;
+    padding: 8px;
 }
 
 .social-links svg {
-
     fill: #ffffff;
-    /* make icons white */
-
     opacity: 0.9;
+    height: 100%;
+    width: 100%;
 }
 
 
@@ -3203,3 +3203,18 @@ button {
 
 
 /* Modal CSS End */
+
+
+
+
+
+
+
+
+
+
+
+.table-purple tbody tr td {
+
+    border: none;
+}
