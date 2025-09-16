@@ -3218,12 +3218,16 @@ button {
     justify-content: center;
 }
 
-.text_theme{
+.text_theme {
     color: #fa009f !important;
+    transition: color 0.3s ease-in-out, text-shadow 0.3s ease-in-out;
 }
-.text_theme:hover{
+
+.text_theme:hover {
     color: white !important;
+    text-shadow: 0 0 8px rgba(250, 0, 159, 0.7);
 }
+
 
 .twitter-img{
     width: 100%;
