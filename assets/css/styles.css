@@ -3218,3 +3218,7 @@ button {
 
     border: none;
 }
+
+.text_theme{
+    color: #fa009f !important;
+}
