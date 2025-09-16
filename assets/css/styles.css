@@ -437,7 +437,8 @@ input, textarea, button{
     display: flex;
     flex-wrap: wrap;
     gap: 6px;
-    margin-bottom: 1rem;
+    /* margin-bottom: 1rem; */
+    padding: 10px 0;
 }
 
 .keno-number {
