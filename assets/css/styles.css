@@ -3020,7 +3020,6 @@ button {
     align-items: center;
     gap: 10px;
 }
-
 .butn {
     position: relative;
     z-index: 2;
@@ -3043,6 +3042,7 @@ button {
     overflow: hidden;
     border-radius: 4.875rem;
     margin-left: 10px;
+    margin-right: 0 !important;
 }
 
 .header_inner .butn {
