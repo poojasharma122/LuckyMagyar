@@ -1860,12 +1860,12 @@ button {
 
 .social-links a:hover {
     transform: translateY(-3px);
-    background: white;
+    /* background: white; */
 }
 
 .social-links svg:hover {
 
-    fill: #000;
+    /* fill: #000; */
     /* make icons white */
 
 
@@ -3221,4 +3221,9 @@ button {
 
 .text_theme{
     color: #fa009f !important;
+}
+
+.twitter-img{
+    width: 100%;
+    max-width: 20px;
 }
