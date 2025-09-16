@@ -1704,7 +1704,9 @@ input, textarea, button{
     background-size: contain;
     background-repeat: no-repeat;
     height: 4.75rem;
-    width: 18.75rem;
+    width: 100%;
+    max-width: 200px;
+    margin: 0 auto;
 }
 
 .footer .footer-logos {
@@ -1870,8 +1872,8 @@ input, textarea, button{
 }
 
 .disclaimer_txt {
-    border-top: 1px solid #00ffcc;
-    border-bottom: 1px solid #00ffcc;
+    border-top: 1px solid #fa009f;
+    border-bottom: 1px solid #fa009f;
 }
 
 .disclaimer_txt p {
