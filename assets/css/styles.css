@@ -1372,7 +1372,6 @@ input, textarea, button{
 /* Review Card */
 .review-card {
     background: rgba(20, 0, 30, 0.85);
-    /* semi-transparent dark purple */
     border-radius: 20px;
     padding: 4rem;
     text-align: center;
@@ -1382,6 +1381,7 @@ input, textarea, button{
     margin: 0 auto;
     position: relative;
     overflow: hidden;
+    min-height: 325px;
 }
 
 /* Remove circular wave pattern */
